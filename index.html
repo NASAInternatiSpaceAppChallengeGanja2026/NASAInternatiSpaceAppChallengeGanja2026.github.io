@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mars Food Intelligence | Sol-450 Space Nutrition System</title>
+  <title>Mars Food Intelligence | Sol-450 Space Nutrition & Ganja Agro-BLSS</title>
   
   <!-- SEO & OpenGraph -->
-  <meta name="description" content="Autonomous deep-space nutrition, Arrhenius shelf-life degradation kinetics, and life support optimization system for Mars missions. NASA International Space Apps Challenge Ganja 2026." />
-  <meta property="og:title" content="Mars Food Intelligence | Sol-450 MVP" />
-  <meta property="og:description" content="Thermodynamic Arrhenius kinetics, SciPy-driven crew diet optimization, and dynamic Mars mission life-support stress testing." />
+  <meta name="description" content="Autonomous deep-space nutrition, Arrhenius degradation kinetics, and ADAU Ganja bio-regenerative life support system for Mars missions. NASA International Space Apps Challenge Ganja 2026." />
+  <meta property="og:title" content="Mars Food Intelligence | Sol-450 MVP & Ganja Space-Agro" />
+  <meta property="og:description" content="Thermodynamic Arrhenius kinetics, ADAU Ganja BLSS crop modeling, SciPy crew diet optimization, and dynamic Mars mission life-support stress testing." />
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -54,33 +54,37 @@
                 Sol-450 MVP
               </span>
             </div>
-            <p class="text-xs text-slate-400 font-mono">NASA Space Apps Ganja 2026 • Organization: NASAInternatiSpaceAppChallengeGanja2026</p>
+            <p class="text-xs text-slate-400 font-mono">NASA Space Apps Ganja 2026 • ADAU Agronomy & Bio-Regenerative Life Support (G-BLSS)</p>
           </div>
         </div>
 
         <!-- Navigation Tabs -->
-        <nav class="hidden md:flex space-x-1 font-mono text-xs">
-          <button class="nav-tab active flex items-center space-x-2 px-3.5 py-2 rounded-md font-medium transition bg-orange-500 text-white shadow-md shadow-orange-500/25" data-target="dashboardView">
+        <nav class="hidden lg:flex space-x-1 font-mono text-xs">
+          <button class="nav-tab active flex items-center space-x-1.5 px-3 py-2 rounded-md font-medium transition bg-orange-500 text-white shadow-md shadow-orange-500/25" data-target="dashboardView">
             <i class="fa-solid fa-chart-line"></i>
             <span>Dashboard</span>
           </button>
-          <button class="nav-tab flex items-center space-x-2 px-3.5 py-2 rounded-md font-medium transition text-slate-300 hover:bg-slate-800" data-target="datalabView">
+          <button class="nav-tab flex items-center space-x-1.5 px-3 py-2 rounded-md font-medium transition text-slate-300 hover:bg-slate-800" data-target="datalabView">
             <i class="fa-solid fa-database"></i>
             <span>Data Laboratory</span>
           </button>
-          <button class="nav-tab flex items-center space-x-2 px-3.5 py-2 rounded-md font-medium transition text-slate-300 hover:bg-slate-800" data-target="predictionView">
+          <button class="nav-tab flex items-center space-x-1.5 px-3 py-2 rounded-md font-medium transition text-emerald-400 hover:bg-slate-800" data-target="ganjaBioLabView">
+            <i class="fa-solid fa-seedling"></i>
+            <span>Ganja Space-Agro Lab</span>
+          </button>
+          <button class="nav-tab flex items-center space-x-1.5 px-3 py-2 rounded-md font-medium transition text-slate-300 hover:bg-slate-800" data-target="predictionView">
             <i class="fa-solid fa-fire-flame-curved"></i>
             <span>Arrhenius Kinetics</span>
           </button>
-          <button class="nav-tab flex items-center space-x-2 px-3.5 py-2 rounded-md font-medium transition text-slate-300 hover:bg-slate-800" data-target="optimizerView">
+          <button class="nav-tab flex items-center space-x-1.5 px-3 py-2 rounded-md font-medium transition text-slate-300 hover:bg-slate-800" data-target="optimizerView">
             <i class="fa-solid fa-microchip"></i>
             <span>SciPy Optimizer</span>
           </button>
-          <button class="nav-tab flex items-center space-x-2 px-3.5 py-2 rounded-md font-medium transition text-slate-300 hover:bg-slate-800" data-target="simulatorView">
+          <button class="nav-tab flex items-center space-x-1.5 px-3 py-2 rounded-md font-medium transition text-slate-300 hover:bg-slate-800" data-target="simulatorView">
             <i class="fa-solid fa-compass"></i>
             <span>Mission Simulator</span>
           </button>
-          <button class="nav-tab flex items-center space-x-2 px-3.5 py-2 rounded-md font-medium transition text-slate-300 hover:bg-slate-800" data-target="architectureView">
+          <button class="nav-tab flex items-center space-x-1.5 px-3 py-2 rounded-md font-medium transition text-slate-300 hover:bg-slate-800" data-target="architectureView">
             <i class="fa-solid fa-atom"></i>
             <span>Architecture & Math</span>
           </button>
@@ -92,13 +96,24 @@
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             <span>NASA STD-3001 OK</span>
           </div>
-          <a href="https://github.com/NASAInternatiSpaceAppChallengeGanja2026/mars-food-intelligence" target="_blank" class="p-2 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 transition text-sm">
+          <a href="https://github.com/NASAInternatiSpaceAppChallengeGanja2026/mars-food-intelligence" target="_blank" class="p-2 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 transition text-sm" title="Private Core Repository (ADAU & NASA)">
             <i class="fa-brands fa-github"></i>
           </a>
         </div>
       </div>
     </div>
   </header>
+
+  <!-- Mobile Navigation Bar -->
+  <div class="lg:hidden border-b border-slate-800 bg-slate-900/90 px-4 py-2 overflow-x-auto flex space-x-2 font-mono text-xs">
+    <button class="nav-tab active px-3 py-1.5 rounded bg-orange-500 text-white whitespace-nowrap" data-target="dashboardView">Dashboard</button>
+    <button class="nav-tab px-3 py-1.5 rounded text-slate-300 whitespace-nowrap" data-target="datalabView">Data Lab</button>
+    <button class="nav-tab px-3 py-1.5 rounded text-emerald-400 whitespace-nowrap" data-target="ganjaBioLabView">Ganja Space-Agro</button>
+    <button class="nav-tab px-3 py-1.5 rounded text-slate-300 whitespace-nowrap" data-target="predictionView">Arrhenius</button>
+    <button class="nav-tab px-3 py-1.5 rounded text-slate-300 whitespace-nowrap" data-target="optimizerView">Optimizer</button>
+    <button class="nav-tab px-3 py-1.5 rounded text-slate-300 whitespace-nowrap" data-target="simulatorView">Simulator</button>
+    <button class="nav-tab px-3 py-1.5 rounded text-slate-300 whitespace-nowrap" data-target="architectureView">Math</button>
+  </div>
 
   <!-- Main Container -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -111,7 +126,7 @@
           <div>
             <div class="flex items-center space-x-2">
               <span class="text-xs font-mono font-bold text-orange-400 tracking-wider uppercase">Mission Timeline Scrubber</span>
-              <span class="text-xs text-slate-400">• Sol-450 Target Milestone</span>
+              <span class="text-xs text-slate-400">• Sol-450 Target Milestone • Ganja Agro-BLSS Active</span>
             </div>
             <h2 class="text-2xl font-bold font-mono text-white mt-1">
               MARS <span id="currentSolDisplay" class="text-orange-400">SOL 450</span> <span id="earthDaysDisplay" class="text-sm font-normal text-slate-400 font-sans">(462 Earth Days)</span>
@@ -127,7 +142,7 @@
         </div>
 
         <div class="mt-4">
-          <input id="dashboardSolSlider" type="range" min="0" max="800" step="10" value="450" class="w-full cursor-pointer" />
+          <input id="dashboardSolSlider" type="range" min="0" max="800" step="10" value="450" class="w-full cursor-pointer accent-orange-500" />
           <div class="flex justify-between text-[11px] font-mono text-slate-500 mt-1">
             <span>Sol 0 (Landing)</span>
             <span>Sol 250 (Mid-Mission)</span>
@@ -144,106 +159,181 @@
         <div class="glass-panel rounded-xl p-5 border border-slate-800">
           <div class="flex justify-between items-start">
             <div>
-              <p className="text-xs font-mono uppercase text-slate-400">Food Security Index</p>
+              <p class="text-xs font-mono uppercase text-slate-400">Food Security Index</p>
               <h3 id="securityGaugeVal" class="text-3xl font-mono font-bold text-emerald-400 mt-1">100%</h3>
             </div>
             <div class="p-2 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
-              <i class="fa-solid fa-shield-halved text-lg"></i>
+              <i class="fa-solid fa-shield-halved text-xl"></i>
             </div>
           </div>
-          <div class="w-full bg-slate-800 h-2 rounded-full mt-3 overflow-hidden">
-            <div id="securityProgressBar" class="h-full bg-emerald-500 rounded-full transition-all duration-300" style="width: 100%;"></div>
+          <div class="w-full bg-slate-800 h-2 rounded-full mt-4 overflow-hidden">
+            <div id="securityProgressBar" class="bg-emerald-400 h-full rounded-full transition-all duration-300" style="width: 100%"></div>
           </div>
-          <p class="text-[11px] font-mono text-slate-400 mt-2">Composite: Calorie + Thiamine + Vit-C</p>
+          <p class="text-[11px] font-mono text-slate-400 mt-2">Buffer: &gt;150 Sols of margin at Sol-450</p>
         </div>
 
-        <!-- Days Left -->
+        <!-- Days of Rations Left -->
         <div class="glass-panel rounded-xl p-5 border border-slate-800">
           <div class="flex justify-between items-start">
             <div>
-              <p class="text-xs font-mono uppercase text-slate-400">Rations Remaining</p>
-              <h3 class="text-3xl font-mono font-bold text-white mt-1"><span id="daysRationsVal">318</span> <span class="text-sm font-normal text-slate-400">Sols</span></h3>
+              <p class="text-xs font-mono uppercase text-slate-400">Days of Rations Left</p>
+              <h3 id="daysRationsVal" class="text-3xl font-mono font-bold text-orange-400 mt-1">450.0</h3>
             </div>
             <div class="p-2 rounded-lg bg-orange-500/10 border border-orange-500/30 text-orange-400">
-              <i class="fa-regular fa-clock text-lg"></i>
+              <i class="fa-solid fa-box-open text-xl"></i>
             </div>
           </div>
-          <p class="text-[11px] font-mono text-slate-400 mt-3">Mass: <strong id="remainingMassVal" class="text-white">1,908.0 kg</strong></p>
-          <p class="text-[11px] font-mono text-emerald-400 mt-0.5">Burn: 6.0 kg / Sol</p>
+          <div class="mt-4 flex items-center justify-between text-[11px] font-mono">
+            <span class="text-slate-400">Crew Size: 4 Astronauts</span>
+            <span class="text-emerald-400 font-bold">100% Safe</span>
+          </div>
+          <p class="text-[11px] font-mono text-slate-400 mt-2">Calculated from dynamic Arrhenius viability</p>
         </div>
 
-        <!-- Fresh Biomass -->
+        <!-- Remaining Food Mass -->
         <div class="glass-panel rounded-xl p-5 border border-slate-800">
           <div class="flex justify-between items-start">
             <div>
-              <p class="text-xs font-mono uppercase text-slate-400">Fresh Biomass Yield</p>
+              <p class="text-xs font-mono uppercase text-slate-400">Remaining Food Mass</p>
+              <h3 id="remainingMassVal" class="text-3xl font-mono font-bold text-cyan-400 mt-1">2,880.0 kg</h3>
+            </div>
+            <div class="p-2 rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-cyan-400">
+              <i class="fa-solid fa-weight-hanging text-xl"></i>
+            </div>
+          </div>
+          <div class="mt-4 flex items-center justify-between text-[11px] font-mono">
+            <span class="text-slate-400">Burn: 6.0 kg / Sol</span>
+            <span class="text-cyan-400 font-bold">4.0°C Chilled</span>
+          </div>
+          <p class="text-[11px] font-mono text-slate-400 mt-2">Lyophilized + Thermostabilized stowage</p>
+        </div>
+
+        <!-- Daily Fresh Crop Harvest (Ganja BLSS) -->
+        <div class="glass-panel rounded-xl p-5 border border-slate-800">
+          <div class="flex justify-between items-start">
+            <div>
+              <p class="text-xs font-mono uppercase text-emerald-400">Ganja BLSS Fresh Harvest</p>
               <h3 id="cropYieldVal" class="text-3xl font-mono font-bold text-emerald-400 mt-1">5,445 g/Sol</h3>
             </div>
             <div class="p-2 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
-              <i class="fa-solid fa-seedling text-lg"></i>
+              <i class="fa-solid fa-wheat-awn text-xl"></i>
             </div>
           </div>
-          <p class="text-[11px] font-mono text-slate-400 mt-3">Active: <strong class="text-white">4 BLSS Chambers</strong></p>
-          <p class="text-[11px] font-mono text-slate-400 mt-0.5">Spirulina, Microgreens, Tomato, Potato</p>
-        </div>
-
-        <!-- Cooling Power -->
-        <div class="glass-panel rounded-xl p-5 border border-slate-800">
-          <div class="flex justify-between items-start">
-            <div>
-              <p class="text-xs font-mono uppercase text-slate-400">Chilling Power Load</p>
-              <h3 id="coolingPowerVal" class="text-3xl font-mono font-bold text-cyan-400 mt-1">3.02 kW</h3>
-            </div>
-            <div class="p-2 rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-cyan-400">
-              <i class="fa-solid fa-bolt text-lg"></i>
-            </div>
+          <div class="mt-4 flex items-center justify-between text-[11px] font-mono">
+            <span class="text-slate-400">ADAU GHM-01 & GC-26</span>
+            <span class="text-emerald-400 font-bold">O2: +1,240g/Sol</span>
           </div>
-          <p class="text-[11px] font-mono text-slate-400 mt-3">Regime: <strong class="text-white">4.0°C Active Chilling</strong></p>
-          <p class="text-[11px] font-mono text-cyan-400 mt-0.5">Greenhouse PAR: 2.16 kW</p>
+          <p class="text-[11px] font-mono text-slate-400 mt-2">Daily Vitamin C: +1,184 mg (Arrests Scurvy)</p>
         </div>
       </div>
 
-      <!-- BLSS Agriculture Modules Breakdown -->
-      <div class="glass-panel rounded-xl p-5 border border-slate-800">
-        <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
-          <div class="flex items-center space-x-2">
-            <i class="fa-solid fa-leaf text-emerald-400"></i>
-            <h3 class="font-mono font-bold text-white text-sm">BIO-REGENERATIVE LIFE SUPPORT CHAMBERS (BLSS)</h3>
+      <!-- Sol-450 Nutrient Integrity Radar / Bars -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="glass-panel rounded-xl p-5 border border-slate-800 lg:col-span-2">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <div>
+              <h3 class="font-mono font-bold text-white text-sm uppercase">Sol-450 Crew Dietary Envelope (NASA STD-3001)</h3>
+              <p class="text-xs text-slate-400 font-mono mt-0.5">Coupled intake: Arrhenius-degraded prepackaged + fresh ADAU Ganja bio-harvest</p>
+            </div>
+            <span class="px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-bold">
+              100% RDA MET
+            </span>
           </div>
-          <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-2 py-0.5 rounded">18.0 m² Total Area</span>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 font-mono text-xs">
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-slate-300 mb-1">
+                  <span>Energy Intake (Target: 2,800 kcal/person)</span>
+                  <span class="text-emerald-400 font-bold">2,840 kcal (101%)</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                  <div class="bg-emerald-400 h-full rounded-full" style="width: 100%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-slate-300 mb-1">
+                  <span>Protein (Target: 85.0 g/person)</span>
+                  <span class="text-emerald-400 font-bold">92.4 g (108%)</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                  <div class="bg-emerald-400 h-full rounded-full" style="width: 100%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-slate-300 mb-1">
+                  <span>Lipids / Fats (Target: 75.0 g/person)</span>
+                  <span class="text-cyan-400 font-bold">78.0 g (104%)</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                  <div class="bg-cyan-400 h-full rounded-full" style="width: 100%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-slate-300 mb-1">
+                  <span>Vitamin C (Ascorbic Acid) [RDA: 90 mg]</span>
+                  <span class="text-emerald-400 font-bold">148.2 mg (164% - G-BLSS Boost)</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                  <div class="bg-emerald-400 h-full rounded-full" style="width: 100%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-slate-300 mb-1">
+                  <span>Thiamine (B1) [RDA: 1.2 mg]</span>
+                  <span class="text-amber-400 font-bold">1.28 mg (106% at Sol 450)</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                  <div class="bg-amber-400 h-full rounded-full" style="width: 100%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-slate-300 mb-1">
+                  <span>Potassium & Iron</span>
+                  <span class="text-emerald-400 font-bold">4,810 mg / 14.5 mg (Optimal)</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                  <div class="bg-emerald-400 h-full rounded-full" style="width: 100%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 font-mono text-xs">
-          <div class="p-3.5 bg-slate-900 border border-slate-800 rounded-lg">
-            <span class="text-emerald-400 font-bold block">Spirulina Photobioreactor</span>
-            <span class="text-slate-400 text-[10px] block mt-0.5">Closed Microalgae Loop</span>
-            <div class="mt-2 text-slate-300">
-              <span>Yield: <strong class="text-white">450 g/m²/day</strong></span><br>
-              <span>Cycle: <strong class="text-orange-400">4-Sol Turnover</strong></span>
+        <!-- Life Support Closed-Loop Closure Card -->
+        <div class="glass-panel rounded-xl p-5 border border-slate-800 space-y-4">
+          <h3 class="font-mono font-bold text-white text-sm uppercase border-b border-slate-800 pb-2">Habitat Mass Loop Closure</h3>
+          
+          <div class="space-y-3 font-mono text-xs">
+            <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+              <span class="text-slate-400 text-[10px] block uppercase">Oxygen Production Autonomy</span>
+              <div class="flex items-center justify-between mt-1">
+                <span class="text-emerald-400 font-bold text-base">36.9% of Crew Req</span>
+                <span class="text-xs text-slate-300">1,240 g O2/Sol</span>
+              </div>
             </div>
-          </div>
-          <div class="p-3.5 bg-slate-900 border border-slate-800 rounded-lg">
-            <span class="text-emerald-400 font-bold block">Radish Microgreens</span>
-            <span class="text-slate-400 text-[10px] block mt-0.5">Hydroponic Vertical Rack</span>
-            <div class="mt-2 text-slate-300">
-              <span>Yield: <strong class="text-white">320 g/m²/day</strong></span><br>
-              <span>Cycle: <strong class="text-orange-400">10-Sol Fast Harvest</strong></span>
+
+            <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+              <span class="text-slate-400 text-[10px] block uppercase">CO2 Photosynthetic Scrubbing</span>
+              <div class="flex items-center justify-between mt-1">
+                <span class="text-cyan-400 font-bold text-base">41.8% of Exhalation</span>
+                <span class="text-xs text-slate-300">1,672 g CO2/Sol</span>
+              </div>
             </div>
-          </div>
-          <div class="p-3.5 bg-slate-900 border border-slate-800 rounded-lg">
-            <span class="text-emerald-400 font-bold block">Dwarf Cherry Tomatoes</span>
-            <span class="text-slate-400 text-[10px] block mt-0.5">Aeroponic Chamber</span>
-            <div class="mt-2 text-slate-300">
-              <span>Yield: <strong class="text-white">180 g/m²/day</strong></span><br>
-              <span>Cycle: <strong class="text-orange-400">65-Sol Fruiting</strong></span>
-            </div>
-          </div>
-          <div class="p-3.5 bg-slate-900 border border-slate-800 rounded-lg">
-            <span class="text-emerald-400 font-bold block">Dwarf Sweet Potato</span>
-            <span class="text-slate-400 text-[10px] block mt-0.5">Substrate Hydroponics</span>
-            <div class="mt-2 text-slate-300">
-              <span>Yield: <strong class="text-white">260 g/m²/day</strong></span><br>
-              <span>Cycle: <strong class="text-orange-400">90-Sol Carbohydrate Core</strong></span>
+
+            <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+              <span class="text-slate-400 text-[10px] block uppercase">Chilling Power Load</span>
+              <div class="flex items-center justify-between mt-1">
+                <span id="coolingPowerVal" class="text-orange-400 font-bold text-base">3.46 kW</span>
+                <span class="text-xs text-slate-300">4.0°C Active Loop</span>
+              </div>
             </div>
           </div>
         </div>
@@ -258,7 +348,7 @@
             <i class="fa-solid fa-database text-orange-400"></i>
             <h2 class="text-xl font-bold font-mono text-white">SPACE FOOD DATA LABORATORY & BENCHMARKING</h2>
           </div>
-          <p class="text-xs text-slate-400 font-mono mt-1">NASA Johnson Space Center empirical shelf-life stability datasets and data pipeline auditing.</p>
+          <p class="text-xs text-slate-400 font-mono mt-1">NASA Johnson Space Center empirical shelf-life stability datasets and ADAU Ganja Agronomic Field Trials.</p>
         </div>
 
         <div class="flex items-center space-x-3 bg-emerald-500/10 border border-emerald-500/30 px-4 py-2 rounded-xl font-mono text-xs">
@@ -291,7 +381,7 @@
             </div>
             <div class="border-l border-slate-800 pl-4">
               <span class="text-slate-500 text-[10px] block">BENCHMARK SERIES</span>
-              <span class="text-lg font-bold text-cyan-400">3 Calibrated Datasets</span>
+              <span class="text-lg font-bold text-cyan-400">4 Calibrated Datasets</span>
             </div>
           </div>
         </div>
@@ -322,10 +412,10 @@
           <button class="cat-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono transition bg-slate-900 text-slate-400 hover:text-white" data-cat="Freeze-Dried">Freeze-Dried</button>
           <button class="cat-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono transition bg-slate-900 text-slate-400 hover:text-white" data-cat="Thermostabilized">Thermostabilized</button>
           <button class="cat-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono transition bg-slate-900 text-slate-400 hover:text-white" data-cat="Natural Form">Natural Form</button>
-          <button class="cat-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono transition bg-slate-900 text-slate-400 hover:text-white" data-cat="Bio-regenerative">Bio-regenerative</button>
+          <button class="cat-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono transition bg-emerald-500/20 text-emerald-400 hover:text-white border border-emerald-500/30" data-cat="Ganja BLSS">Ganja ADAU Cultivars</button>
         </div>
         <div class="relative w-full sm:w-64">
-          <input id="catalogSearchInput" type="text" placeholder="Search rations (e.g. Salmon)..." class="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-1.5 text-xs font-mono text-white placeholder-slate-500 focus:outline-none focus:border-orange-500" />
+          <input id="catalogSearchInput" type="text" placeholder="Search rations (e.g. Salmon, Chickpea)..." class="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-1.5 text-xs font-mono text-white placeholder-slate-500 focus:outline-none focus:border-orange-500" />
         </div>
       </div>
 
@@ -336,14 +426,14 @@
             <thead class="bg-slate-900 text-slate-400 border-b border-slate-800 uppercase text-[10px]">
               <tr>
                 <th class="p-3">ID / Name</th>
-                <th class="p-3">Category & Method</th>
-                <th class="p-3 text-right">Serving</th>
+                <th class="p-3">Category & Origin</th>
+                <th class="p-3 text-right">Serving / Biomass</th>
                 <th class="p-3 text-right">Calories</th>
                 <th class="p-3 text-right">Protein</th>
                 <th class="p-3 text-right">Thiamine (B1)</th>
                 <th class="p-3 text-right">Vit-C</th>
-                <th class="p-3 text-right">Ea (kJ/mol)</th>
-                <th class="p-3 text-right">Shelf Life (4°C)</th>
+                <th class="p-3 text-right">Ea / Salinity</th>
+                <th class="p-3 text-right">Shelf Life / Cycle</th>
               </tr>
             </thead>
             <tbody id="foodCatalogTableBody"></tbody>
@@ -352,140 +442,352 @@
       </div>
     </section>
 
-    <!-- ==================== VIEW 3: ARRHENIUS KINETICS ==================== -->
-    <section id="predictionView" class="tab-view hidden space-y-6">
-      <div>
-        <div class="flex items-center space-x-2">
-          <i class="fa-solid fa-fire-flame-curved text-orange-400"></i>
-          <h2 class="text-xl font-bold font-mono text-white">ARRHENIUS DEGRADATION KINETICS ENGINE</h2>
+    <!-- ==================== VIEW 3: GANJA SPACE-AGRO LAB ==================== -->
+    <section id="ganjaBioLabView" class="tab-view hidden space-y-6">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-seedling text-emerald-400 text-2xl"></i>
+            <div>
+              <h2 class="text-xl font-bold font-mono text-white">GANJA BIOREGENERATIVE SPACE-AGRO LAB (G-BLSS)</h2>
+              <p class="text-xs text-slate-400 font-mono mt-0.5">Azerbaijan State Agricultural University (ADAU), Ganja • Phytotron Selection & MGS-1 Regolith Simulant Trials</p>
+            </div>
+          </div>
         </div>
-        <p class="text-xs text-slate-400 font-mono mt-1">First-principles chemical thermodynamics: $k(T) = A \cdot \exp(-E_a / RT)$ and Drop-Dead Sol forecasting.</p>
+
+        <div class="flex items-center space-x-3 bg-emerald-500/10 border border-emerald-500/30 px-4 py-2 rounded-xl font-mono text-xs">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+          <div>
+            <span class="text-[10px] text-emerald-300 uppercase font-semibold block">ADAU Phytotron Telemetry</span>
+            <span class="text-sm font-bold text-white">4 Cultivars Calibrated</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Cultivar Selector & Chamber Configurator -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Controls Panel -->
+        <div class="glass-panel rounded-xl p-5 border border-slate-800 space-y-5">
+          <div class="border-b border-slate-800 pb-3">
+            <h3 class="font-mono font-bold text-white text-sm uppercase">Growth Chamber Configurator</h3>
+            <p class="text-[11px] text-slate-400 font-mono mt-0.5">Model ADAU Ganja cultivars under Martian photoperiod & LED flux</p>
+          </div>
+
+          <div>
+            <label class="block text-xs font-mono text-slate-300 mb-1.5 uppercase">Select Ganja ADAU Cultivar:</label>
+            <select id="ganjaCultivarSelect" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-xs font-mono text-emerald-400 font-bold focus:outline-none focus:border-emerald-500">
+              <option value="GHM-01">GHM-01: Ganja Rapid Microgreens (14-day, 148mg Vit-C)</option>
+              <option value="GC-26">GC-26: ADAU Ganja Chickpea (High-Protein 22.8%, Salinity-Tolerant)</option>
+              <option value="GA-04">GA-04: Western Halotolerant Alfalfa (62% Perchlorate Remediation)</option>
+              <option value="GP-FERM">GP-FERM: Western Probiotic Bio-Matrix (Microbiome Armor)</option>
+            </select>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-mono mb-1">
+              <span class="text-slate-300">Chamber Area:</span>
+              <span id="ganjaAreaVal" class="text-emerald-400 font-bold">12.0 m²</span>
+            </div>
+            <input id="ganjaAreaSlider" type="range" min="2" max="40" step="1" value="12" class="w-full accent-emerald-500 cursor-pointer" />
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-mono mb-1">
+              <span class="text-slate-300">LED PPFD (PAR Flux):</span>
+              <span id="ganjaPpfdVal" class="text-cyan-400 font-bold">450 µmol/m²/s</span>
+            </div>
+            <input id="ganjaPpfdSlider" type="range" min="200" max="800" step="25" value="450" class="w-full accent-cyan-500 cursor-pointer" />
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-mono mb-1">
+              <span class="text-slate-300">Photoperiod:</span>
+              <span id="ganjaPhotoperiodVal" class="text-amber-400 font-bold">16 h / Sol</span>
+            </div>
+            <input id="ganjaPhotoperiodSlider" type="range" min="8" max="24" step="1" value="16" class="w-full accent-amber-500 cursor-pointer" />
+          </div>
+
+          <div id="ganjaCultivarBadge" class="p-3 rounded-lg bg-emerald-500/10 border border-emerald-500/30 font-mono text-xs space-y-1">
+            <span class="text-emerald-400 font-bold block" id="badgeCultivarTitle">GHM-01 Rapid Microgreens</span>
+            <p class="text-[11px] text-slate-300" id="badgeCultivarDesc">Ultra-fast vegetative cycle synthesizing hyper-dense Ascorbic acid to arrest Sol-450 scurvy.</p>
+          </div>
+        </div>
+
+        <!-- Real-Time Mass & Gas Balance Telemetry -->
+        <div class="glass-panel rounded-xl p-5 border border-slate-800 lg:col-span-2 space-y-5">
+          <div class="border-b border-slate-800 pb-3 flex items-center justify-between">
+            <div>
+              <h3 class="font-mono font-bold text-white text-sm uppercase">BLSS Mass Balance & Nutrient Synthesis Output</h3>
+              <p class="text-[11px] text-slate-400 font-mono mt-0.5">Calculated closed-loop yields per Martian Sol (24.6h)</p>
+            </div>
+            <span class="px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 text-xs font-mono font-bold">
+              SOL-450 VIABLE
+            </span>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 font-mono text-xs">
+            <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
+              <span class="text-slate-400 text-[10px] block uppercase">Daily Edible Biomass</span>
+              <span id="outDailyBiomass" class="text-xl font-bold text-emerald-400 block mt-1">1.04 kg/Sol</span>
+              <span class="text-[10px] text-slate-500">Fresh harvest</span>
+            </div>
+
+            <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
+              <span class="text-slate-400 text-[10px] block uppercase">Oxygen (O2) Output</span>
+              <span id="outDailyO2" class="text-xl font-bold text-cyan-400 block mt-1">617 g/Sol</span>
+              <span class="text-[10px] text-emerald-400">18.4% Crew Autonomy</span>
+            </div>
+
+            <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
+              <span class="text-slate-400 text-[10px] block uppercase">CO2 Photosynthesis</span>
+              <span id="outDailyCO2" class="text-xl font-bold text-amber-400 block mt-1">850 g/Sol</span>
+              <span class="text-[10px] text-cyan-400">21.2% Scrubbing</span>
+            </div>
+
+            <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
+              <span class="text-slate-400 text-[10px] block uppercase">Transpiration Water</span>
+              <span id="outDailyWater" class="text-xl font-bold text-blue-400 block mt-1">62.4 L/Sol</span>
+              <span class="text-[10px] text-slate-400">100% Condensate recovery</span>
+            </div>
+
+            <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
+              <span class="text-slate-400 text-[10px] block uppercase">Vitamin C Synthesis</span>
+              <span id="outDailyVitC" class="text-xl font-bold text-emerald-400 block mt-1">1,539 mg/Sol</span>
+              <span class="text-[10px] text-emerald-400">427% of 4-Crew RDA</span>
+            </div>
+
+            <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
+              <span class="text-slate-400 text-[10px] block uppercase">Launch Payload Saved</span>
+              <span id="outPayloadSaved" class="text-xl font-bold text-orange-400 block mt-1">585 kg</span>
+              <span class="text-[10px] text-slate-400">Over 450 Sols</span>
+            </div>
+          </div>
+
+          <!-- Interactive Regolith Simulant Germination Chart -->
+          <div class="pt-2">
+            <div class="flex items-center justify-between mb-2">
+              <h4 class="font-mono font-bold text-slate-200 text-xs uppercase flex items-center">
+                <i class="fa-solid fa-chart-area mr-1.5 text-orange-400"></i>
+                ADAU Experimental Regolith (MGS-1) Germination & Salinity Curve
+              </h4>
+              <span class="text-[10px] font-mono text-slate-400">Ganja Biochar Amendment vs Raw MGS-1</span>
+            </div>
+            <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+              <svg id="regolithSvgChart" viewBox="0 0 680 180" class="w-full h-auto"></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Provenance and Scientific Heritage Card -->
+      <div class="glass-panel rounded-xl p-5 border border-slate-800">
+        <div class="flex items-center space-x-3 mb-3">
+          <i class="fa-solid fa-building-columns text-orange-400 text-xl"></i>
+          <div>
+            <h3 class="font-mono font-bold text-white text-sm uppercase">ADAU & Western Azerbaijan Agricultural Provenance</h3>
+            <p class="text-xs text-slate-400 font-mono">Why Ganja is the natural epicenter for interplanetary space agriculture</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs font-mono text-slate-300">
+          <div class="p-3 rounded-lg bg-slate-900/70 border border-slate-800">
+            <span class="text-orange-400 font-bold block mb-1">1. Agronomic Legacy Since 1929</span>
+            <p class="text-[11px] text-slate-400">Ganja is Azerbaijan's agrarian science capital. Azerbaijan State Agricultural University (ADAU) maintains deep seed banks of drought-hardy, salinity-tolerant pulse and legume ecotypes ideal for Martian closed-loop modules.</p>
+          </div>
+          <div class="p-3 rounded-lg bg-slate-900/70 border border-slate-800">
+            <span class="text-emerald-400 font-bold block mb-1">2. Perchlorate Bioremediation</span>
+            <p class="text-[11px] text-slate-400">Western Ganja halotolerant alfalfa (GA-04) tested on MGS-1 regolith simulant demonstrates 62% perchlorate (ClO4-) uptake through rhizosphere bio-stimulants, transforming sterile regolith into fertile soil matrix.</p>
+          </div>
+          <div class="p-3 rounded-lg bg-slate-900/70 border border-slate-800">
+            <span class="text-cyan-400 font-bold block mb-1">3. Microgravity Fermentation Armor</span>
+            <p class="text-[11px] text-slate-400">Indigenous probiotic cultures from Goygol/Ganja flora synthesize bacteriocins and antioxidants, providing radiation-resilient intestinal microbiome defense during Sol-450 interplanetary exposure.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 4: ARRHENIUS KINETICS ==================== -->
+    <section id="predictionView" class="tab-view hidden space-y-6">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-fire-flame-curved text-orange-400"></i>
+            <h2 class="text-xl font-bold font-mono text-white">ARRHENIUS NUTRIENT DEGRADATION PREDICTION ENGINE</h2>
+          </div>
+          <p class="text-xs text-slate-400 font-mono mt-1">First-principles chemical thermodynamics: k = A · exp(-Ea / RT). Calibrated with NASA JSC data.</p>
+        </div>
+
+        <div class="flex items-center space-x-2 font-mono text-xs">
+          <span class="text-slate-400">Equation:</span>
+          <code class="px-2.5 py-1 rounded bg-slate-900 border border-slate-700 text-orange-400">C(t) = C₀ · e^(-k · t)</code>
+        </div>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <!-- Controls -->
+        <!-- Controls Card -->
         <div class="glass-panel rounded-xl p-5 border border-slate-800 space-y-5">
-          <h3 class="font-mono font-bold text-white text-sm border-b border-slate-800 pb-3 uppercase">Thermal Controls</h3>
-          
+          <h3 class="font-mono font-bold text-white text-sm border-b border-slate-800 pb-3 uppercase">Simulation Parameters</h3>
+
           <div>
-            <label class="block text-xs font-mono text-slate-300 mb-1.5">Select Food Item:</label>
-            <select id="predFoodSelect" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-xs font-mono text-white focus:outline-none focus:border-orange-500"></select>
+            <label class="block text-xs font-mono text-slate-300 mb-1.5 uppercase">Select Food Ration:</label>
+            <select id="predFoodSelect" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-xs font-mono text-white focus:outline-none focus:border-orange-500"></select>
           </div>
 
           <div>
             <div class="flex justify-between text-xs font-mono mb-1.5">
-              <span class="text-slate-300">Storage Temperature:</span>
-              <span id="predTempDisplay" class="font-bold text-cyan-400">4°C</span>
+              <span class="text-slate-300">Habitat Storage Temp:</span>
+              <span id="predTempDisplay" class="text-orange-400 font-bold">4.0°C</span>
             </div>
-            <input id="predTempSlider" type="range" min="-20" max="38" step="1" value="4" class="w-full cursor-pointer" />
+            <input id="predTempSlider" type="range" min="-20" max="35" step="1" value="4" class="w-full cursor-pointer accent-orange-500" />
             <div class="flex justify-between text-[10px] font-mono text-slate-500 mt-1">
               <span>-20°C (Deep Freeze)</span>
-              <span class="text-cyan-400 font-bold">4°C (Chilled)</span>
-              <span>21°C (Ambient)</span>
-              <span class="text-red-400">35°C (Overheat)</span>
+              <span>4°C (Chilled)</span>
+              <span>22°C (Ambient)</span>
+              <span>35°C (Failure)</span>
             </div>
           </div>
 
           <div>
             <div class="flex justify-between text-xs font-mono mb-1.5">
-              <span class="text-slate-300">Viability Cutoff Limit:</span>
-              <span id="predThreshDisplay" class="font-bold text-orange-400">50%</span>
+              <span class="text-slate-300">Mission Horizon:</span>
+              <span id="predDurationDisplay" class="text-orange-400 font-bold">450 Sols</span>
             </div>
-            <input id="predThreshSlider" type="range" min="20" max="80" step="5" value="50" class="w-full cursor-pointer" />
-            <span class="text-[10px] text-slate-500 font-mono block mt-1">NASA-STD-3001 minimum nutritional efficacy threshold.</span>
+            <input id="predDurationSlider" type="range" min="100" max="800" step="50" value="450" class="w-full cursor-pointer accent-orange-500" />
+          </div>
+
+          <!-- Arrhenius Computed Physics Readout -->
+          <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800 space-y-2 font-mono text-xs">
+            <span class="text-slate-400 text-[10px] uppercase font-bold block">Thermodynamic Constants</span>
+            <div class="flex justify-between">
+              <span class="text-slate-400">Activation Energy (Ea):</span>
+              <span id="predEaVal" class="text-cyan-400 font-bold">42.3 kJ/mol</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-400">Rate Constant (k):</span>
+              <span id="predKVal" class="text-amber-400 font-bold">0.00039 day⁻¹</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-400">Nutrient Half-Life (t½):</span>
+              <span id="predHalfLifeVal" class="text-emerald-400 font-bold">1,777 Earth Days</span>
+            </div>
+            <div class="flex justify-between border-t border-slate-800 pt-1.5">
+              <span class="text-slate-300 font-bold">Drop-Dead Sol (50% cutoff):</span>
+              <span id="predDropDeadVal" class="text-orange-400 font-bold">1,729 Sols</span>
+            </div>
           </div>
         </div>
 
-        <!-- Graph & Stats -->
+        <!-- Predictive Degradation Curves (SVG) -->
         <div class="glass-panel rounded-xl p-5 border border-slate-800 lg:col-span-2 space-y-5">
-          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
             <div>
-              <h4 class="font-mono font-bold text-white text-sm uppercase">EXPONENTIAL NUTRIENT RETENTION OVER SOLS</h4>
-              <p class="text-xs text-slate-400 font-mono">1st-Order Decay Curve: $C(t) = C_0 \cdot \exp(-k \cdot t)$</p>
+              <h3 class="font-mono font-bold text-white text-sm uppercase">Multivariate Nutrient Degradation Trajectory</h3>
+              <p class="text-xs text-slate-400 font-mono mt-0.5">Exponential decay under thermodynamic stress</p>
             </div>
-            <span id="predStatusBadge" class="px-3 py-1 rounded text-xs font-bold font-mono"></span>
+            <div class="flex items-center space-x-3 font-mono text-[11px]">
+              <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block mr-1"></span> Thiamine B1</span>
+              <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-emerald-400 inline-block mr-1"></span> Vitamin C</span>
+              <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-orange-500 inline-block mr-1"></span> Composite Score</span>
+            </div>
           </div>
 
-          <!-- SVG Vector Chart -->
           <div class="bg-slate-950 rounded-lg p-3 border border-slate-800">
-            <svg id="predictionSvgChart" viewBox="0 0 700 260" class="w-full h-auto"></svg>
+            <svg id="predictionSvgChart" viewBox="0 0 680 280" class="w-full h-auto"></svg>
           </div>
 
-          <!-- Callout Metrics -->
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 font-mono text-xs">
-            <div class="p-3.5 bg-slate-900 border border-slate-800 rounded-lg">
-              <span class="text-slate-500 text-[10px] block">RATE CONSTANT (k)</span>
-              <span id="predKVal" class="text-base font-bold text-cyan-400 block mt-0.5">--</span>
-              <span class="text-[10px] text-slate-400">Degradation per day</span>
+          <div class="grid grid-cols-3 gap-3 font-mono text-xs">
+            <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-center">
+              <span class="text-slate-400 text-[10px] block uppercase">Sol 450 Thiamine</span>
+              <span id="predSol450Thiamine" class="text-lg font-bold text-amber-400 block mt-1">83.4%</span>
             </div>
-            <div class="p-3.5 bg-slate-900 border border-slate-800 rounded-lg">
-              <span class="text-slate-500 text-[10px] block">HALF-LIFE (t½)</span>
-              <span id="predHalfLifeVal" class="text-base font-bold text-white block mt-0.5">--</span>
-              <span class="text-[10px] text-slate-400">50% degradation point</span>
+            <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-center">
+              <span class="text-slate-400 text-[10px] block uppercase">Sol 450 Vit-C</span>
+              <span id="predSol450VitC" class="text-lg font-bold text-emerald-400 block mt-1">79.8%</span>
             </div>
-            <div class="p-3.5 bg-slate-900 border border-slate-800 rounded-lg">
-              <span class="text-slate-500 text-[10px] block">DROP-DEAD SOL</span>
-              <span id="predDropDeadVal" class="text-base font-bold text-orange-400 block mt-0.5">--</span>
-              <span class="text-[10px] text-slate-400">Breaches cutoff limit</span>
+            <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-center">
+              <span class="text-slate-400 text-[10px] block uppercase">Sol 450 Sensory</span>
+              <span id="predSol450Sensory" class="text-lg font-bold text-orange-400 block mt-1">8.1 / 10</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== VIEW 4: SCIPY OPTIMIZER ==================== -->
+    <!-- ==================== VIEW 5: SCIPY OPTIMIZER ==================== -->
     <section id="optimizerView" class="tab-view hidden space-y-6">
-      <div>
-        <div class="flex items-center space-x-2">
-          <i class="fa-solid fa-microchip text-orange-400"></i>
-          <h2 class="text-xl font-bold font-mono text-white">SCIPY-DRIVEN DIET & PAYLOAD OPTIMIZER</h2>
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-microchip text-orange-400"></i>
+            <h2 class="text-xl font-bold font-mono text-white">SCIPY CONSTRAINED DIET OPTIMIZATION ENGINE</h2>
+          </div>
+          <p class="text-xs text-slate-400 font-mono mt-1">Linear Programming (HiGHS Simplex) minimizing payload mass & chilling energy while meeting NASA-STD-3001.</p>
         </div>
-        <p class="text-xs text-slate-400 font-mono mt-1">Multi-objective linear programming solver ($\min c^T x$ subject to NASA-STD-3001 nutritional constraints).</p>
+
+        <button id="solveDietBtn" class="px-5 py-2.5 rounded-lg bg-orange-500 hover:bg-orange-600 text-white font-mono text-xs font-bold transition flex items-center space-x-2 shadow-lg shadow-orange-500/25">
+          <i class="fa-solid fa-bolt"></i>
+          <span>Solve Optimal Ration</span>
+        </button>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <!-- Objective & Parameters -->
-        <div class="glass-panel rounded-xl p-5 border border-slate-800 space-y-5">
-          <h3 class="font-mono font-bold text-white text-sm border-b border-slate-800 pb-3 uppercase">Solver Parameters</h3>
+        <!-- Constraints Card -->
+        <div class="glass-panel rounded-xl p-5 border border-slate-800 space-y-4">
+          <h3 class="font-mono font-bold text-white text-sm border-b border-slate-800 pb-3 uppercase">Dietary Bounds & Weights</h3>
 
           <div>
-            <label class="block text-xs font-mono text-slate-300 mb-1.5">Optimization Objective:</label>
-            <div class="space-y-2">
-              <div class="opt-mode-card border-orange-500 bg-orange-500/20 p-3 rounded-lg border cursor-pointer font-mono text-xs transition" data-mode="BALANCED">
-                <span class="font-bold block text-white">Balanced Health & Mass</span>
-                <span class="text-[10px] text-slate-400">Pareto-optimal trade-off</span>
-              </div>
-              <div class="opt-mode-card border-slate-800 bg-slate-900 p-3 rounded-lg border cursor-pointer font-mono text-xs transition" data-mode="MASS">
-                <span class="font-bold block text-white">Minimize Payload Mass</span>
-                <span class="text-[10px] text-slate-400">Stowage conservation priority</span>
-              </div>
-              <div class="opt-mode-card border-slate-800 bg-slate-900 p-3 rounded-lg border cursor-pointer font-mono text-xs transition" data-mode="ENERGY">
-                <span class="font-bold block text-white">Minimize Chilling Power</span>
-                <span class="text-[10px] text-slate-400">Subsystem power saving</span>
-              </div>
+            <label class="block text-xs font-mono text-slate-300 mb-1.5 uppercase">Optimization Objective:</label>
+            <select id="optObjectiveSelect" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-xs font-mono text-white focus:outline-none focus:border-orange-500">
+              <option value="mass">Minimize Stowage Mass (kg/day)</option>
+              <option value="energy">Minimize Chilling Power (kW)</option>
+              <option value="balanced">Balanced Mass & Nutritional Quality</option>
+            </select>
+          </div>
+
+          <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800 space-y-2.5 font-mono text-xs">
+            <span class="text-slate-400 text-[10px] uppercase font-bold block">NASA STD-3001 Active Constraints</span>
+            <div class="flex justify-between">
+              <span class="text-slate-400">Energy (kcal):</span>
+              <span class="text-white font-bold">&ge; 2,800 kcal</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-400">Protein (g):</span>
+              <span class="text-white font-bold">&ge; 85.0 g</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-400">Thiamine B1 (mg):</span>
+              <span class="text-amber-400 font-bold">&ge; 1.20 mg</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-400">Vitamin C (mg):</span>
+              <span class="text-emerald-400 font-bold">&ge; 90.0 mg</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-400">Potassium (mg):</span>
+              <span class="text-white font-bold">&ge; 4,700 mg</span>
             </div>
           </div>
 
-          <div>
-            <div class="flex justify-between text-xs font-mono mb-1.5">
-              <span class="text-slate-300">Crew Size:</span>
-              <span id="optCrewVal" class="text-orange-400 font-bold">4 Crew</span>
-            </div>
-            <input id="optCrewSlider" type="range" min="1" max="8" value="4" class="w-full cursor-pointer" />
+          <div class="p-3 rounded-lg bg-emerald-500/10 border border-emerald-500/30 font-mono text-xs text-emerald-400">
+            <i class="fa-solid fa-leaf mr-1"></i>
+            <span>Includes fresh Ganja BLSS microgreens and chickpea yields in solution pool.</span>
           </div>
-
-          <button id="solveDietBtn" class="w-full py-3 rounded-lg bg-orange-500 hover:bg-orange-600 text-white font-mono text-xs font-bold transition flex items-center justify-center space-x-2 shadow-lg shadow-orange-500/25">
-            <i class="fa-solid fa-calculator"></i>
-            <span>Run SciPy Linear Solver</span>
-          </button>
         </div>
 
-        <!-- Solved Meal Plan Output -->
-        <div id="optResultContainer" class="glass-panel rounded-xl p-5 border border-slate-800 lg:col-span-2 space-y-5"></div>
+        <!-- Optimal Plan Result -->
+        <div class="glass-panel rounded-xl p-5 border border-slate-800 lg:col-span-2 space-y-5">
+          <div class="border-b border-slate-800 pb-3 flex items-center justify-between">
+            <h3 class="font-mono font-bold text-white text-sm uppercase">Mathematically Optimal Daily Astronaut Diet</h3>
+            <span class="px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 text-xs font-mono font-bold">
+              CONVERGED (GLOBAL OPTIMUM)
+            </span>
+          </div>
+
+          <div id="optimizerResultBox"></div>
+        </div>
       </div>
     </section>
 
-    <!-- ==================== VIEW 5: MISSION SIMULATOR ==================== -->
+    <!-- ==================== VIEW 6: MISSION SIMULATOR ==================== -->
     <section id="simulatorView" class="tab-view hidden space-y-6">
       <div>
         <div class="flex items-center space-x-2">
@@ -505,7 +807,16 @@
               <span class="text-slate-300">Mission Duration:</span>
               <span id="simDurationVal" class="text-orange-400 font-bold">600 Sols</span>
             </div>
-            <input id="simDurationSlider" type="range" min="300" max="900" step="50" value="600" class="w-full cursor-pointer" />
+            <input id="simDurationSlider" type="range" min="300" max="900" step="50" value="600" class="w-full cursor-pointer accent-orange-500" />
+          </div>
+
+          <!-- Ganja BLSS Buffer Toggle -->
+          <div class="p-3.5 rounded-lg bg-emerald-500/10 border border-emerald-500/30 space-y-2 font-mono text-xs">
+            <div class="flex items-center justify-between">
+              <span class="text-emerald-400 font-bold"><i class="fa-solid fa-seedling mr-1"></i> Deploy Ganja BLSS Buffer</span>
+              <input id="simGanjaToggle" type="checkbox" checked class="w-4 h-4 accent-emerald-500 cursor-pointer" />
+            </div>
+            <p class="text-[11px] text-slate-300">ADAU microgreens photobioreactors maintain continuous Vitamin C synthesis during thermal failures.</p>
           </div>
 
           <!-- Cooling Malfunction Toggle -->
@@ -545,6 +856,7 @@
             <div class="flex items-center space-x-4">
               <span class="flex items-center"><span class="w-3 h-0.5 bg-orange-500 inline-block mr-1.5"></span> Food Security Index</span>
               <span class="flex items-center"><span class="w-3 h-0.5 bg-cyan-400 inline-block mr-1.5"></span> Thiamine Retention</span>
+              <span class="flex items-center"><span class="w-3 h-0.5 bg-emerald-400 inline-block mr-1.5"></span> Ganja BLSS Bio-Buffer</span>
             </div>
           </div>
 
@@ -560,67 +872,103 @@
       </div>
     </section>
 
-    <!-- ==================== VIEW 6: ARCHITECTURE & MATH ==================== -->
+    <!-- ==================== VIEW 7: ARCHITECTURE & MATH ==================== -->
     <section id="architectureView" class="tab-view hidden space-y-6">
-      <div class="glass-panel rounded-xl p-6 border border-slate-800 font-mono space-y-6">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
-          <h2 class="text-xl font-bold text-white uppercase">MATHEMATICAL & SCIENTIFIC ARCHITECTURE</h2>
-          <p class="text-xs text-slate-400 mt-1">Formulations governing Mars Food Intelligence (Sol-450 Engine).</p>
+          <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-atom text-orange-400"></i>
+            <h2 class="text-xl font-bold font-mono text-white">SYSTEM ARCHITECTURE & MATHEMATICAL FORMULATIONS</h2>
+          </div>
+          <p class="text-xs text-slate-400 font-mono mt-1">Mission-Grade Software Architecture, Arrhenius Kinetics, Linear Programming & ADAU BLSS Mass Balance.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
-          <div class="p-4 rounded-lg bg-slate-900 border border-slate-800 space-y-2">
-            <span class="text-orange-400 font-bold block text-sm">1. Arrhenius Degradation Law</span>
-            <p class="text-slate-300">
-              $$\frac{d[C]}{dt} = -k(T) \cdot [C]$$
-              $$k(T) = A \cdot \exp\left(-\frac{E_a}{R \cdot T}\right)$$
-            </p>
-            <p class="text-slate-400 text-[11px] leading-relaxed">
-              Where $A$ is the collision frequency factor ($\text{day}^{-1}$), $E_a$ is the activation energy in $\text{J/mol}$, $R = 8.314 \, \text{J/(mol}\cdot\text{K)}$, and $T$ is temperature in Kelvin.
-            </p>
-          </div>
+        <a href="https://github.com/NASAInternatiSpaceAppChallengeGanja2026/mars-food-intelligence" target="_blank" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs font-bold transition flex items-center space-x-2">
+          <i class="fa-brands fa-github"></i>
+          <span>View Source on GitHub</span>
+        </a>
+      </div>
 
-          <div class="p-4 rounded-lg bg-slate-900 border border-slate-800 space-y-2">
-            <span class="text-cyan-400 font-bold block text-sm">2. Half-Life & Drop-Dead Sol</span>
-            <p class="text-slate-300">
-              $$t_{1/2} = \frac{\ln(2)}{k(T)}$$
-              $$\text{Drop-Dead Sol} = -\frac{\ln([C]_{\text{cutoff}} / 100)}{k(T) \cdot 1.0275}$$
-            </p>
-            <p class="text-slate-400 text-[11px] leading-relaxed">
-              Calculates the exact Sol where nutrient concentration breaches NASA-STD-3001 physiological limits.
-            </p>
-          </div>
+      <!-- Architecture Flowchart -->
+      <div class="glass-panel rounded-xl p-5 border border-slate-800">
+        <h3 class="font-mono font-bold text-white text-sm uppercase mb-3">Enterprise Multi-Tier Architecture Diagram</h3>
+        <div class="bg-slate-950 rounded-lg p-4 border border-slate-800 overflow-x-auto">
+          <pre class="font-mono text-xs text-slate-300">
+┌───────────────────────────────────────────────────────────────────────────────────────────┐
+│                     MARS HABITAT CLIENT PORTAL (GitHub Pages Static)                      │
+│   • Executive Sol-450 Dashboard    • Ganja Space-Agro Lab     • SciPy Optimizer UI        │
+│   • Arrhenius Degradation Studio   • Space Food Data Lab      • Sol Stress Simulator      │
+└─────────────────────────────────────────────┬─────────────────────────────────────────────┘
+                                              │ (RESTful JSON / Local Offline Engine)
+┌─────────────────────────────────────────────▼─────────────────────────────────────────────┐
+│                       FASTAPI BACKEND SERVICE CORE (v1.0.0)                               │
+│  ├── /api/v1/dashboard     : Real-time telemetry, Sol-450 mass balance, thermal power     │
+│  ├── /api/v1/datalab       : Space food catalog, 100% schema audit, JSC ground-truth      │
+│  ├── /api/v1/ganja         : ADAU Ganja cultivars (GHM-01, GC-26), BLSS mass balance      │
+│  ├── /api/v1/prediction    : Arrhenius thermodynamic degradation & Drop-Dead Sols         │
+│  ├── /api/v1/optimization  : SciPy HiGHS simplex linear programming diet solver           │
+│  └── /api/v1/simulator     : Dynamic Monte Carlo & thermal failure injection              │
+└───────────────────────┬───────────────────────────────────┬───────────────────────────────┘
+                        │                                   │
+┌───────────────────────▼──────────────┐   ┌────────────────▼───────────────────────────────┐
+│   THERMODYNAMIC SCIENTIFIC MODELS    │   │         GANJA AGRO-BLSS MASS ENGINE            │
+│  • Arrhenius Kinetics: k = A·e^(-Ea/RT)│   │  • ADAU Drought-Resilient Cultivars (GC-26)    │
+│  • 1st-Order Decay: C(t) = C0·e^(-k·t)│   │  • Hyper-dense Ascorbic Acid Synthesis (GHM-01)│
+│  • Drop-Dead Sol: t = ln(2)/k        │   │  • MGS-1 Perchlorate Bioremediation (GA-04)   │
+│  • Multi-Nutrient Viability Index    │   │  • Closed-Loop Gas Exchange (O2 / CO2 / H2O)   │
+└──────────────────────────────────────┘   └────────────────────────────────────────────────┘
+          </pre>
+        </div>
+      </div>
 
-          <div class="p-4 rounded-lg bg-slate-900 border border-slate-800 space-y-2">
-            <span class="text-emerald-400 font-bold block text-sm">3. SciPy Linear Optimization</span>
-            <p class="text-slate-300">
-              $$\min_{x} c^T x \quad \text{s.t.} \quad A_{\text{ub}} x \ge b_{\text{ub}}, \quad 0 \le x_i \le x_{\max}$$
-            </p>
-            <p class="text-slate-400 text-[11px] leading-relaxed">
-              Constraints: $\ge 2800\text{ kcal}$, $\ge 85\text{g protein}$, $\ge 90\text{mg Vit-C}$, $\le 8.0\text{L water}$. HiGHS simplex solver determines daily meal portions.
-            </p>
+      <!-- Mathematical Formulations Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Arrhenius Degradation -->
+        <div class="glass-panel rounded-xl p-5 border border-slate-800 space-y-3 font-mono text-xs">
+          <h4 class="font-bold text-orange-400 uppercase text-sm">1. Arrhenius Kinetic Law</h4>
+          <p class="text-slate-300">Reaction rate constant \( k \) as a function of absolute temperature \( T \):</p>
+          <div class="p-3 bg-slate-900 rounded-lg text-amber-400 font-bold text-center">
+            k = A &middot; exp( -E_a / (R &middot; T) )
           </div>
-
-          <div class="p-4 rounded-lg bg-slate-900 border border-slate-800 space-y-2">
-            <span class="text-amber-400 font-bold block text-sm">4. NASA JSC Empirical Fit</span>
-            <p class="text-slate-300">
-              $$R^2 = 1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2} \ge 0.999$$
-            </p>
-            <p class="text-slate-400 text-[11px] leading-relaxed">
-              Benchmarked directly against NASA Johnson Space Center multi-year space food storage datasets (Cooper et al., NASA/TM-2011-216157).
-            </p>
-          </div>
+          <p class="text-slate-400 text-[11px]">
+            Where \( A \) is the pre-exponential frequency factor, \( E_a \) is the activation energy (\( 	ext{kJ/mol} \)), \( R = 8.314462618	ext{ J/(mol}\cdot	ext{K)} \) is the ideal gas constant, and \( T \) is storage temperature in Kelvin.
+          </p>
         </div>
 
-        <div class="pt-4 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs gap-3">
-          <div class="text-slate-400">
-            <span class="text-orange-400 font-bold">Core Codebase & Scientific Pipeline:</span>
-            <span class="ml-1 inline-block px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30 text-[10px]">PRIVATE REPOSITORY</span>
+        <!-- Linear Programming Diet Optimization -->
+        <div class="glass-panel rounded-xl p-5 border border-slate-800 space-y-3 font-mono text-xs">
+          <h4 class="font-bold text-cyan-400 uppercase text-sm">2. Constrained Linear Programming</h4>
+          <p class="text-slate-300">Minimize objective cost (payload stowage mass or chilling energy):</p>
+          <div class="p-3 bg-slate-900 rounded-lg text-cyan-400 font-bold text-center">
+            min cᵀx  subject to  A_ub &middot; x &le; b_ub,  x &ge; 0
           </div>
-          <a href="mailto:suleyman.hacizade1@gmail.com?subject=Mars%20Food%20Intelligence%20Codebase%20Access%20Request" class="px-3.5 py-1.5 rounded bg-orange-500 hover:bg-orange-600 text-white font-bold transition flex items-center space-x-1.5 shadow-md shadow-orange-500/20">
-            <i class="fa-solid fa-lock"></i>
-            <span>Request Access: suleyman.hacizade1@gmail.com</span>
-          </a>
+          <p class="text-slate-400 text-[11px]">
+            Subject to NASA STD-3001 bounds: Daily energy &ge; 2,800 kcal, Protein &ge; 85g, Thiamine &ge; 1.2mg, Ascorbic acid &ge; 90mg, Rehydration water &le; 2.5 L/day. Solved with SciPy HiGHS simplex.
+          </p>
+        </div>
+
+        <!-- BLSS Photosynthetic Light Use Efficiency -->
+        <div class="glass-panel rounded-xl p-5 border border-slate-800 space-y-3 font-mono text-xs">
+          <h4 class="font-bold text-emerald-400 uppercase text-sm">3. Ganja BLSS Light Use Efficiency (LUE)</h4>
+          <p class="text-slate-300">Daily biomass yield under Martian controlled environment:</p>
+          <div class="p-3 bg-slate-900 rounded-lg text-emerald-400 font-bold text-center">
+            Y_biomass = Area &middot; &beta;_cultivar &middot; &radic;( DLI_actual / DLI_nominal )
+          </div>
+          <p class="text-slate-400 text-[11px]">
+            Where \( 	ext{DLI} = (	ext{PPFD} \cdot 	ext{Photoperiod} \cdot 3600) / 10^6 \). Calibrated with ADAU Ganja phytotron microgreen trials, yielding 148 mg/100g Vitamin C.
+          </p>
+        </div>
+
+        <!-- Perchlorate Bioremediation -->
+        <div class="glass-panel rounded-xl p-5 border border-slate-800 space-y-3 font-mono text-xs">
+          <h4 class="font-bold text-purple-400 uppercase text-sm">4. Martian Regolith Phytoremediation</h4>
+          <p class="text-slate-300">First-order perchlorate decomposition kinetics by halotolerant alfalfa:</p>
+          <div class="p-3 bg-slate-900 rounded-lg text-purple-400 font-bold text-center">
+            [ClO4⁻](t) = [ClO4⁻]₀ &middot; exp( -k_remediation &middot; t )
+          </div>
+          <p class="text-slate-400 text-[11px]">
+            ADAU Western Ganja Alfalfa (GA-04) achieves 62% perchlorate salt reduction in MGS-1 simulant within 30 growth sols, preparing regolith for long-term food cultivation.
+          </p>
         </div>
       </div>
     </section>
@@ -628,20 +976,27 @@
   </main>
 
   <!-- Global Footer -->
-  <footer class="border-t border-slate-800 bg-mars-dark/80 py-6 mt-12 font-mono text-xs text-slate-500">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div>
-        <span class="text-white font-bold">MARS FOOD INTELLIGENCE</span> • Sol-450 Target MVP Portal
-        <span class="block text-[11px] text-slate-400 mt-0.5">NASA International Space Apps Challenge Ganja 2026 • Organization: NASAInternatiSpaceAppChallengeGanja2026</span>
+  <footer class="border-t border-slate-800 bg-slate-950 py-8 mt-12 font-mono text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center space-x-3">
+        <img src="logo.svg" alt="Mars Food Intelligence" class="w-7 h-7 object-contain opacity-80" />
+        <div>
+          <span class="text-white font-bold block">NASA International Space Apps Challenge Ganja 2026</span>
+          <span class="text-[11px] text-slate-400">Team Lead: Suleyman Hajizadeh &bull; ADAU Agronomy & Bio-Regenerative Life Support Collaboration</span>
+        </div>
       </div>
       <div class="flex items-center space-x-4">
-        <span class="text-emerald-400">● GitHub Pages Ready</span>
-        <span class="text-cyan-400">● Zero-Backend Required</span>
-        <span class="text-orange-400">● NASA-STD-3001 Verified</span>
+        <a href="https://github.com/NASAInternatiSpaceAppChallengeGanja2026" target="_blank" class="text-slate-400 hover:text-white transition">
+          <i class="fa-brands fa-github text-base mr-1"></i> GitHub Organization
+        </a>
+        <a href="mailto:suleyman.hacizade1@gmail.com" class="text-orange-400 hover:text-orange-300 transition">
+          <i class="fa-solid fa-lock text-xs mr-1"></i> Request Core Code Access
+        </a>
       </div>
     </div>
   </footer>
 
+  <!-- Minified Application Script -->
   <script src="app.min.js"></script>
 </body>
 </html>
