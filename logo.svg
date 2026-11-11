@@ -95,7 +95,7 @@
 
   <!-- Typography Block -->
   <text x="250" y="390" text-anchor="middle" font-family="'Space Grotesk', 'Montserrat', sans-serif" font-size="24" font-weight="800" letter-spacing="4" fill="#ffffff">
-    MARS FOOD INTELLIGENCE
+    NURTUREAI
   </text>
 
   <text x="250" y="420" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" letter-spacing="3" fill="#f97316">
@@ -103,6 +103,6 @@
   </text>
 
   <text x="250" y="445" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="500" letter-spacing="1.5" fill="#64748b">
-    NASA INTERNATIONAL SPACE APPS CHALLENGE GANJA 2026
+    AUTONOMOUS SPACE NUTRITION & BIO-LIFE SUPPORT
   </text>
 </svg>
