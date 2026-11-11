@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NurtureAISpace | Autonomous Space Nutrition & Bio-Life Support Intelligence</title>
+  <title>NurtureAI | NurtureAISpace | Autonomous Space Nutrition & Life Support</title>
   
   <!-- SEO & OpenGraph -->
-  <meta name="description" content="NurtureAI autonomous deep-space nutrition, Arrhenius degradation kinetics, and ADAU Ganja bio-regenerative life support system for Mars missions. Autonomous Space Nutrition & Life Support System." />
+  <meta name="description" content="NurtureAI autonomous deep-space nutrition, Arrhenius degradation kinetics, and bio-regenerative life support system (N-BLSS) for Mars missions. Autonomous Space Nutrition & Life Support System." />
   <meta property="og:title" content="NurtureAI | Mars Food Intelligence Sol-450 MVP" />
-  <meta property="og:description" content="NurtureAI: Thermodynamic Arrhenius kinetics, ADAU Ganja BLSS crop modeling, SciPy crew diet optimization, and dynamic Mars mission life-support stress testing." />
+  <meta property="og:description" content="NurtureAI: Thermodynamic Arrhenius kinetics, bio-regenerative crop modeling, SciPy crew diet optimization, and dynamic Mars mission life-support stress testing." />
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -40,41 +40,39 @@
 </head>
 <body class="bg-mars-dark text-slate-100 font-sans antialiased selection:bg-orange-500 selection:text-white">
 
-  <!-- Top Global Navigation Header -->
-  <header class="border-b border-slate-800 bg-mars-dark/95 backdrop-blur-md sticky top-0 z-50">
+  <!-- Top Global Navigation Header (Ultra-Responsive) -->
+  <header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <!-- Logo -->
-        <div class="flex items-center space-x-3">
-          <img src="logo.svg" alt="NurtureAI Logo" class="w-11 h-11 rounded-lg border border-orange-500/30 shadow-md shadow-orange-500/20 object-contain bg-slate-950 p-0.5" />
-          <div>
+      <div class="flex items-center justify-between h-16 gap-3">
+        <!-- Brand Logo & Title -->
+        <div class="flex items-center space-x-3 shrink-0 min-w-0">
+          <img src="logo.svg?v=2" alt="NurtureAISpace Logo" class="w-10 h-10 rounded-lg border border-orange-500/30 shadow-md shadow-orange-500/20 object-contain bg-slate-950 p-0.5 shrink-0" />
+          <div class="flex flex-col min-w-0">
             <div class="flex items-center space-x-2">
-              <span class="font-bold tracking-tight text-white text-lg font-mono">NURTURE<span class="text-orange-400">AI</span><span class="text-cyan-400 font-semibold">SPACE</span></span>
-              <span class="bg-orange-500/20 text-orange-400 border border-orange-500/40 text-[10px] font-mono px-2 py-0.5 rounded font-semibold uppercase">
-                Sol-450 MVP
-              </span>
+              <span class="font-bold tracking-tight text-white text-base sm:text-lg font-mono whitespace-nowrap">NURTURE<span class="text-orange-400">AI</span><span class="text-cyan-400 font-semibold">SPACE</span></span>
+              <span class="bg-orange-500/20 text-orange-400 border border-orange-500/40 text-[9px] font-mono px-1.5 py-0.5 rounded font-semibold uppercase whitespace-nowrap">Sol-450 MVP</span>
             </div>
-            <p class="text-xs text-slate-400 font-mono">Mars Food Intelligence • Autonomous Space Nutrition & Life Support • Bio-Life Support System (N-BLSS)</p>
+            <p class="hidden 2xl:block text-[11px] text-slate-400 font-mono truncate">Autonomous Space Nutrition &amp; Bio-Life Support System (N-BLSS)</p>
           </div>
         </div>
 
-        <!-- Navigation Tabs -->
-        <nav class="hidden lg:flex space-x-1 font-mono text-xs">
+        <!-- Desktop Navigation Tabs (Visible on 2xl: 1536px+) -->
+        <nav class="hidden 2xl:flex items-center space-x-1 font-mono text-xs shrink-0">
           <button class="nav-tab active flex items-center space-x-1.5 px-3 py-2 rounded-md font-medium transition bg-orange-500 text-white shadow-md shadow-orange-500/25" data-target="dashboardView">
             <i class="fa-solid fa-chart-line"></i>
             <span>Dashboard</span>
           </button>
           <button class="nav-tab flex items-center space-x-1.5 px-3 py-2 rounded-md font-medium transition text-slate-300 hover:bg-slate-800" data-target="datalabView">
             <i class="fa-solid fa-database"></i>
-            <span>Data Laboratory</span>
+            <span>Data Lab</span>
           </button>
           <button class="nav-tab flex items-center space-x-1.5 px-3 py-2 rounded-md font-medium transition text-emerald-400 hover:bg-slate-800" data-target="ganjaBioLabView">
             <i class="fa-solid fa-seedling"></i>
-            <span>Bio-Regenerative Agro Lab</span>
+            <span>Bio-Agro Lab</span>
           </button>
           <button class="nav-tab flex items-center space-x-1.5 px-3 py-2 rounded-md font-medium transition text-slate-300 hover:bg-slate-800" data-target="predictionView">
             <i class="fa-solid fa-fire-flame-curved"></i>
-            <span>Arrhenius Kinetics</span>
+            <span>Arrhenius</span>
           </button>
           <button class="nav-tab flex items-center space-x-1.5 px-3 py-2 rounded-md font-medium transition text-slate-300 hover:bg-slate-800" data-target="optimizerView">
             <i class="fa-solid fa-microchip"></i>
@@ -86,33 +84,33 @@
           </button>
           <button class="nav-tab flex items-center space-x-1.5 px-3 py-2 rounded-md font-medium transition text-slate-300 hover:bg-slate-800" data-target="architectureView">
             <i class="fa-solid fa-atom"></i>
-            <span>Architecture & Math</span>
+            <span>Architecture &amp; Math</span>
           </button>
         </nav>
 
-        <!-- Status Pill -->
-        <div class="flex items-center space-x-3">
-          <div class="flex items-center space-x-1.5 px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono">
+        <!-- Right Side: Status Badge & Code Access -->
+        <div class="flex items-center space-x-2 sm:space-x-3 shrink-0">
+          <div class="hidden sm:flex items-center space-x-1.5 px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono whitespace-nowrap">
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             <span>NASA STD-3001 OK</span>
           </div>
-          <a href="https://github.com/NurtureAISpace/mars-food-intelligence" target="_blank" class="p-2 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 transition text-sm" title="Private Core Repository (ADAU & NASA)">
-            <i class="fa-brands fa-github"></i>
+          <a href="https://github.com/NurtureAISpace/mars-food-intelligence" target="_blank" class="p-2 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition text-sm flex items-center space-x-1" title="Private Core Repository">
+            <i class="fa-brands fa-github text-base"></i>
           </a>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Navigation Bar -->
-  <div class="lg:hidden border-b border-slate-800 bg-slate-900/90 px-4 py-2 overflow-x-auto flex space-x-2 font-mono text-xs">
-    <button class="nav-tab active px-3 py-1.5 rounded bg-orange-500 text-white whitespace-nowrap" data-target="dashboardView">Dashboard</button>
-    <button class="nav-tab px-3 py-1.5 rounded text-slate-300 whitespace-nowrap" data-target="datalabView">Data Lab</button>
-    <button class="nav-tab px-3 py-1.5 rounded text-emerald-400 whitespace-nowrap" data-target="ganjaBioLabView">Bio-Regenerative Agro</button>
-    <button class="nav-tab px-3 py-1.5 rounded text-slate-300 whitespace-nowrap" data-target="predictionView">Arrhenius</button>
-    <button class="nav-tab px-3 py-1.5 rounded text-slate-300 whitespace-nowrap" data-target="optimizerView">Optimizer</button>
-    <button class="nav-tab px-3 py-1.5 rounded text-slate-300 whitespace-nowrap" data-target="simulatorView">Simulator</button>
-    <button class="nav-tab px-3 py-1.5 rounded text-slate-300 whitespace-nowrap" data-target="architectureView">Math</button>
+  <!-- Secondary Responsive Tab Bar (Seamlessly active for Laptop, Tablet, Mobile screens < 2xl) -->
+  <div class="2xl:hidden border-b border-slate-800 bg-slate-900/95 backdrop-blur-md px-3 py-2 overflow-x-auto flex items-center space-x-1.5 font-mono text-xs whitespace-nowrap sticky top-16 z-40">
+    <button class="nav-tab active px-3 py-1.5 rounded-md bg-orange-500 text-white font-medium" data-target="dashboardView"><i class="fa-solid fa-chart-line mr-1"></i> Dashboard</button>
+    <button class="nav-tab px-3 py-1.5 rounded-md text-slate-300 hover:bg-slate-800 font-medium" data-target="datalabView"><i class="fa-solid fa-database mr-1"></i> Data Lab</button>
+    <button class="nav-tab px-3 py-1.5 rounded-md text-emerald-400 hover:bg-slate-800 font-medium" data-target="ganjaBioLabView"><i class="fa-solid fa-seedling mr-1"></i> Bio-Agro Lab</button>
+    <button class="nav-tab px-3 py-1.5 rounded-md text-slate-300 hover:bg-slate-800 font-medium" data-target="predictionView"><i class="fa-solid fa-fire-flame-curved mr-1"></i> Arrhenius</button>
+    <button class="nav-tab px-3 py-1.5 rounded-md text-slate-300 hover:bg-slate-800 font-medium" data-target="optimizerView"><i class="fa-solid fa-microchip mr-1"></i> SciPy Optimizer</button>
+    <button class="nav-tab px-3 py-1.5 rounded-md text-slate-300 hover:bg-slate-800 font-medium" data-target="simulatorView"><i class="fa-solid fa-compass mr-1"></i> Simulator</button>
+    <button class="nav-tab px-3 py-1.5 rounded-md text-slate-300 hover:bg-slate-800 font-medium" data-target="architectureView"><i class="fa-solid fa-atom mr-1"></i> Math</button>
   </div>
 
   <!-- Main Container -->
@@ -126,7 +124,7 @@
           <div>
             <div class="flex items-center space-x-2">
               <span class="text-xs font-mono font-bold text-orange-400 tracking-wider uppercase">Mission Timeline Scrubber</span>
-              <span class="text-xs text-slate-400">• Sol-450 Target Milestone • Ganja Agro-BLSS Active</span>
+              <span class="text-xs text-slate-400">• Sol-450 Target Milestone • Bio-Regenerative N-BLSS Active</span>
             </div>
             <h2 class="text-2xl font-bold font-mono text-white mt-1">
               MARS <span id="currentSolDisplay" class="text-orange-400">SOL 450</span> <span id="earthDaysDisplay" class="text-sm font-normal text-slate-400 font-sans">(462 Earth Days)</span>
@@ -212,7 +210,7 @@
         <div class="glass-panel rounded-xl p-5 border border-slate-800">
           <div class="flex justify-between items-start">
             <div>
-              <p class="text-xs font-mono uppercase text-emerald-400">Ganja BLSS Fresh Harvest</p>
+              <p class="text-xs font-mono uppercase text-emerald-400">Bio-Regenerative Fresh Harvest</p>
               <h3 id="cropYieldVal" class="text-3xl font-mono font-bold text-emerald-400 mt-1">5,445 g/Sol</h3>
             </div>
             <div class="p-2 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
@@ -220,7 +218,7 @@
             </div>
           </div>
           <div class="mt-4 flex items-center justify-between text-[11px] font-mono">
-            <span class="text-slate-400">ADAU GHM-01 & GC-26</span>
+            <span class="text-slate-400">Microgreens & High-Protein Legumes</span>
             <span class="text-emerald-400 font-bold">O2: +1,240g/Sol</span>
           </div>
           <p class="text-[11px] font-mono text-slate-400 mt-2">Daily Vitamin C: +1,184 mg (Arrests Scurvy)</p>
@@ -233,7 +231,7 @@
           <div class="flex items-center justify-between border-b border-slate-800 pb-3">
             <div>
               <h3 class="font-mono font-bold text-white text-sm uppercase">Sol-450 Crew Dietary Envelope (NASA STD-3001)</h3>
-              <p class="text-xs text-slate-400 font-mono mt-0.5">Coupled intake: Arrhenius-degraded prepackaged + fresh ADAU Ganja bio-harvest</p>
+              <p class="text-xs text-slate-400 font-mono mt-0.5">Coupled intake: Arrhenius-degraded prepackaged + fresh bio-regenerative harvest</p>
             </div>
             <span class="px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-bold">
               100% RDA MET
@@ -348,7 +346,7 @@
             <i class="fa-solid fa-database text-orange-400"></i>
             <h2 class="text-xl font-bold font-mono text-white">SPACE FOOD DATA LABORATORY & BENCHMARKING</h2>
           </div>
-          <p class="text-xs text-slate-400 font-mono mt-1">NASA Johnson Space Center empirical shelf-life stability datasets and ADAU Ganja Agronomic Field Trials.</p>
+          <p class="text-xs text-slate-400 font-mono mt-1">NASA Johnson Space Center empirical shelf-life stability datasets and Controlled Space Phytotron Trials.</p>
         </div>
 
         <div class="flex items-center space-x-3 bg-emerald-500/10 border border-emerald-500/30 px-4 py-2 rounded-xl font-mono text-xs">
@@ -412,7 +410,7 @@
           <button class="cat-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono transition bg-slate-900 text-slate-400 hover:text-white" data-cat="Freeze-Dried">Freeze-Dried</button>
           <button class="cat-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono transition bg-slate-900 text-slate-400 hover:text-white" data-cat="Thermostabilized">Thermostabilized</button>
           <button class="cat-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono transition bg-slate-900 text-slate-400 hover:text-white" data-cat="Natural Form">Natural Form</button>
-          <button class="cat-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono transition bg-emerald-500/20 text-emerald-400 hover:text-white border border-emerald-500/30" data-cat="Ganja BLSS">Ganja ADAU Cultivars</button>
+          <button class="cat-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono transition bg-emerald-500/20 text-emerald-400 hover:text-white border border-emerald-500/30" data-cat="Ganja BLSS">Bio-Regenerative Cultivars</button>
         </div>
         <div class="relative w-full sm:w-64">
           <input id="catalogSearchInput" type="text" placeholder="Search rations (e.g. Salmon, Chickpea)..." class="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-1.5 text-xs font-mono text-white placeholder-slate-500 focus:outline-none focus:border-orange-500" />
@@ -450,7 +448,7 @@
             <i class="fa-solid fa-seedling text-emerald-400 text-2xl"></i>
             <div>
               <h2 class="text-xl font-bold font-mono text-white">NURTUREAI BIO-REGENERATIVE SPACE-AGRO LAB (N-BLSS)</h2>
-              <p class="text-xs text-slate-400 font-mono mt-0.5">Azerbaijan State Agricultural University (ADAU), Ganja • Phytotron Selection & MGS-1 Regolith Simulant Trials</p>
+              <p class="text-xs text-slate-400 font-mono mt-0.5">NurtureAISpace Advanced Phytotron Selection & MGS-1 Regolith Simulant Trials</p>
             </div>
           </div>
         </div>
@@ -470,11 +468,11 @@
         <div class="glass-panel rounded-xl p-5 border border-slate-800 space-y-5">
           <div class="border-b border-slate-800 pb-3">
             <h3 class="font-mono font-bold text-white text-sm uppercase">Growth Chamber Configurator</h3>
-            <p class="text-[11px] text-slate-400 font-mono mt-0.5">Model ADAU Ganja cultivars under Martian photoperiod & LED flux</p>
+            <p class="text-[11px] text-slate-400 font-mono mt-0.5">Model Bio-Regenerative cultivars under Martian photoperiod & LED flux</p>
           </div>
 
           <div>
-            <label class="block text-xs font-mono text-slate-300 mb-1.5 uppercase">Select Ganja ADAU Cultivar:</label>
+            <label class="block text-xs font-mono text-slate-300 mb-1.5 uppercase">Select Bio-Regenerative Cultivar:</label>
             <select id="ganjaCultivarSelect" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-xs font-mono text-emerald-400 font-bold focus:outline-none focus:border-emerald-500">
               <option value="GHM-01">GHM-01: Ganja Rapid Microgreens (14-day, 148mg Vit-C)</option>
               <option value="GC-26">GC-26: ADAU Ganja Chickpea (High-Protein 22.8%, Salinity-Tolerant)</option>
@@ -570,7 +568,7 @@
                 <i class="fa-solid fa-chart-area mr-1.5 text-orange-400"></i>
                 ADAU Experimental Regolith (MGS-1) Germination & Salinity Curve
               </h4>
-              <span class="text-[10px] font-mono text-slate-400">Ganja Biochar Amendment vs Raw MGS-1</span>
+              <span class="text-[10px] font-mono text-slate-400">Biochar Amendment vs Raw MGS-1</span>
             </div>
             <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
               <svg id="regolithSvgChart" viewBox="0 0 680 180" class="w-full h-auto"></svg>
@@ -591,15 +589,15 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs font-mono text-slate-300">
           <div class="p-3 rounded-lg bg-slate-900/70 border border-slate-800">
             <span class="text-orange-400 font-bold block mb-1">1. Agronomic Legacy Since 1929</span>
-            <p class="text-[11px] text-slate-400">Ganja is Azerbaijan's agrarian science capital. Azerbaijan State Agricultural University (ADAU) maintains deep seed banks of drought-hardy, salinity-tolerant pulse and legume ecotypes ideal for Martian closed-loop modules.</p>
+            <p class="text-[11px] text-slate-400">Bio-regenerative agriculture provides closed-loop life support. Azerbaijan State Agricultural University (ADAU) maintains deep seed banks of drought-hardy, salinity-tolerant pulse and legume ecotypes ideal for Martian closed-loop modules.</p>
           </div>
           <div class="p-3 rounded-lg bg-slate-900/70 border border-slate-800">
             <span class="text-emerald-400 font-bold block mb-1">2. Perchlorate Bioremediation</span>
-            <p class="text-[11px] text-slate-400">Western Ganja halotolerant alfalfa (GA-04) tested on MGS-1 regolith simulant demonstrates 62% perchlorate (ClO4-) uptake through rhizosphere bio-stimulants, transforming sterile regolith into fertile soil matrix.</p>
+            <p class="text-[11px] text-slate-400">Halotolerant bio-regenerative alfalfa (GA-04) tested on MGS-1 regolith simulant demonstrates 62% perchlorate (ClO4-) uptake through rhizosphere bio-stimulants, transforming sterile regolith into fertile soil matrix.</p>
           </div>
           <div class="p-3 rounded-lg bg-slate-900/70 border border-slate-800">
             <span class="text-cyan-400 font-bold block mb-1">3. Microgravity Fermentation Armor</span>
-            <p class="text-[11px] text-slate-400">Indigenous probiotic cultures from Goygol/Ganja flora synthesize bacteriocins and antioxidants, providing radiation-resilient intestinal microbiome defense during Sol-450 interplanetary exposure.</p>
+            <p class="text-[11px] text-slate-400">Specialized radiation-resilient probiotic cultures synthesize bacteriocins and antioxidants, providing radiation-resilient intestinal microbiome defense during Sol-450 interplanetary exposure.</p>
           </div>
         </div>
       </div>
@@ -769,7 +767,7 @@
 
           <div class="p-3 rounded-lg bg-emerald-500/10 border border-emerald-500/30 font-mono text-xs text-emerald-400">
             <i class="fa-solid fa-leaf mr-1"></i>
-            <span>Includes fresh Ganja BLSS microgreens and chickpea yields in solution pool.</span>
+            <span>Includes fresh N-BLSS microgreens and crop yields in solution pool.</span>
           </div>
         </div>
 
@@ -813,7 +811,7 @@
           <!-- Ganja BLSS Buffer Toggle -->
           <div class="p-3.5 rounded-lg bg-emerald-500/10 border border-emerald-500/30 space-y-2 font-mono text-xs">
             <div class="flex items-center justify-between">
-              <span class="text-emerald-400 font-bold"><i class="fa-solid fa-seedling mr-1"></i> Deploy Ganja BLSS Buffer</span>
+              <span class="text-emerald-400 font-bold"><i class="fa-solid fa-seedling mr-1"></i> Deploy Bio-Regenerative Buffer</span>
               <input id="simGanjaToggle" type="checkbox" checked class="w-4 h-4 accent-emerald-500 cursor-pointer" />
             </div>
             <p class="text-[11px] text-slate-300">ADAU microgreens photobioreactors maintain continuous Vitamin C synthesis during thermal failures.</p>
@@ -856,7 +854,7 @@
             <div class="flex items-center space-x-4">
               <span class="flex items-center"><span class="w-3 h-0.5 bg-orange-500 inline-block mr-1.5"></span> Food Security Index</span>
               <span class="flex items-center"><span class="w-3 h-0.5 bg-cyan-400 inline-block mr-1.5"></span> Thiamine Retention</span>
-              <span class="flex items-center"><span class="w-3 h-0.5 bg-emerald-400 inline-block mr-1.5"></span> Ganja BLSS Bio-Buffer</span>
+              <span class="flex items-center"><span class="w-3 h-0.5 bg-emerald-400 inline-block mr-1.5"></span> N-BLSS Bio-Buffer</span>
             </div>
           </div>
 
@@ -949,7 +947,7 @@
 
         <!-- BLSS Photosynthetic Light Use Efficiency -->
         <div class="glass-panel rounded-xl p-5 border border-slate-800 space-y-3 font-mono text-xs">
-          <h4 class="font-bold text-emerald-400 uppercase text-sm">3. Ganja BLSS Light Use Efficiency (LUE)</h4>
+          <h4 class="font-bold text-emerald-400 uppercase text-sm">3. N-BLSS Light Use Efficiency (LUE) (LUE)</h4>
           <p class="text-slate-300">Daily biomass yield under Martian controlled environment:</p>
           <div class="p-3 bg-slate-900 rounded-lg text-emerald-400 font-bold text-center">
             Y_biomass = Area &middot; &beta;_cultivar &middot; &radic;( DLI_actual / DLI_nominal )
@@ -975,23 +973,62 @@
 
   </main>
 
-  <!-- Global Footer -->
-  <footer class="border-t border-slate-800 bg-slate-950 py-8 mt-12 font-mono text-xs text-slate-500">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
-      <div class="flex items-center space-x-3">
-        <img src="logo.svg" alt="NurtureAI Logo" class="w-7 h-7 object-contain opacity-80" />
-        <div>
-          <span class="text-white font-bold block">NurtureAISpace — Autonomous Space Nutrition & Life Support System</span>
-          <span class="text-[11px] text-slate-400">Team NurtureAISpace: Suleyman Hajizadeh (Lead Systems Architect), Banu Gurbanizada, Yunis, Faruk</span>
+  <!-- Global Footer (Rich Team Showcase & Responsive Layout) -->
+  <footer class="border-t border-slate-800 bg-slate-950 py-10 mt-16 font-mono text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-slate-800/80">
+        <div class="flex items-center space-x-3">
+          <img src="logo.svg?v=2" alt="NurtureAISpace Logo" class="w-10 h-10 object-contain p-0.5 bg-slate-900 border border-slate-800 rounded-lg shrink-0" />
+          <div>
+            <span class="text-white font-bold text-sm sm:text-base font-mono block">NURTUREAISPACE</span>
+            <span class="text-xs text-slate-400">Autonomous Space Nutrition &amp; Bio-Regenerative Life Support Intelligence System</span>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center gap-3 text-xs font-mono">
+          <a id="footerOrgLink" href="https://github.com/NurtureAISpace" target="_blank" class="px-3 py-1.5 rounded bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white transition flex items-center space-x-2">
+            <i class="fa-brands fa-github text-sm"></i>
+            <span>GitHub Organization</span>
+          </a>
+          <a href="mailto:suleyman.hacizade1@gmail.com" class="px-3 py-1.5 rounded bg-orange-500/10 hover:bg-orange-500/20 border border-orange-500/30 text-orange-400 hover:text-orange-300 transition flex items-center space-x-1.5">
+            <i class="fa-solid fa-envelope text-xs"></i>
+            <span>suleyman.hacizade1@gmail.com</span>
+          </a>
         </div>
       </div>
-      <div class="flex items-center space-x-4">
-        <a id="footerOrgLink" href="https://github.com/NurtureAISpace" target="_blank" class="text-slate-400 hover:text-white transition">
-          <i class="fa-brands fa-github text-base mr-1"></i> GitHub Organization
-        </a>
-        <a href="mailto:suleyman.hacizade1@gmail.com" class="text-orange-400 hover:text-orange-300 transition">
-          <i class="fa-solid fa-lock text-xs mr-1"></i> Request Core Code Access
-        </a>
+
+      <!-- NurtureAISpace Team Roster & Roles -->
+      <div class="space-y-3">
+        <div class="flex items-center space-x-2 text-xs font-bold text-white uppercase tracking-wider">
+          <i class="fa-solid fa-users text-orange-400"></i>
+          <span>NurtureAISpace Team</span>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-[11px]">
+          <div class="p-3 rounded-lg bg-slate-900/60 border border-slate-800/80 flex flex-col space-y-1 hover:border-orange-500/40 transition">
+            <span class="text-white font-bold">Süleyman Hacızadə</span>
+            <span class="text-orange-400 font-mono text-[10px] uppercase font-semibold">Lead Systems Architect &amp; Research</span>
+            <span class="text-slate-400 text-[10px]">Arrhenius Kinetics, First-Principles Physics &amp; Diet Optimization</span>
+          </div>
+          <div class="p-3 rounded-lg bg-slate-900/60 border border-slate-800/80 flex flex-col space-y-1 hover:border-cyan-500/40 transition">
+            <span class="text-white font-bold">Banu Qurbanızadə</span>
+            <span class="text-cyan-400 font-mono text-[10px] uppercase font-semibold">Frontend Architecture &amp; UI/UX</span>
+            <span class="text-slate-400 text-[10px]">Spaceflight Telemetry UI, Responsive Design &amp; User Experience</span>
+          </div>
+          <div class="p-3 rounded-lg bg-slate-900/60 border border-slate-800/80 flex flex-col space-y-1 hover:border-emerald-500/40 transition">
+            <span class="text-white font-bold">Yunis</span>
+            <span class="text-emerald-400 font-mono text-[10px] uppercase font-semibold">AI/ML &amp; Degradation Modeling</span>
+            <span class="text-slate-400 text-[10px]">Machine Learning Regression &amp; Degradation Curve Calibration</span>
+          </div>
+          <div class="p-3 rounded-lg bg-slate-900/60 border border-slate-800/80 flex flex-col space-y-1 hover:border-purple-500/40 transition">
+            <span class="text-white font-bold">Faruk</span>
+            <span class="text-purple-400 font-mono text-[10px] uppercase font-semibold">Computer Engineering &amp; Simulation</span>
+            <span class="text-slate-400 text-[10px]">Habitat Life Support Simulation, Sol-by-Sol Stress Testing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-4 border-t border-slate-800/50 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-2">
+        <p>© 2026 NurtureAISpace. Developed for deep-space human planetary missions.</p>
+        <p class="font-mono text-[10px]">NASA-STD-3001 Standard Compliant • Sol-450 Target Milestone</p>
       </div>
     </div>
   </footer>
