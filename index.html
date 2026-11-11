@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NurtureAI | NurtureAISpace | Autonomous Space Nutrition & Life Support</title>
+  <title>NurtureAISpace | Autonomous Space Nutrition &amp; Life Support Intelligence</title>
   
   <!-- SEO & OpenGraph -->
   <meta name="description" content="NurtureAI autonomous deep-space nutrition, Arrhenius degradation kinetics, and bio-regenerative life support system (N-BLSS) for Mars missions. Autonomous Space Nutrition & Life Support System." />
@@ -30,88 +30,92 @@
     }
   </script>
 
+  <!-- Favicon Suite -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=2" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=2" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=2" />
+  <link rel="shortcut icon" href="favicon.ico?v=2" />
+  <meta name="theme-color" content="#060911" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+
   <!-- Google Fonts & FontAwesome -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 <body class="bg-mars-dark text-slate-100 font-sans antialiased selection:bg-orange-500 selection:text-white">
 
-  <!-- Top Global Navigation Header (Ultra-Responsive) -->
-  <header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16 gap-3">
+  <!-- Top Global Navigation Header (Ultra-Responsive Two-Tier) -->
+  <header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur-md sticky top-0 z-50 shadow-lg">
+    <!-- Top Bar: Identity & Status -->
+    <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-14 sm:h-16 gap-3">
         <!-- Brand Logo & Title -->
         <div class="flex items-center space-x-3 shrink-0 min-w-0">
-          <img src="logo.svg?v=2" alt="NurtureAISpace Logo" class="w-10 h-10 rounded-lg border border-orange-500/30 shadow-md shadow-orange-500/20 object-contain bg-slate-950 p-0.5 shrink-0" />
+          <img src="logo.svg?v=2" alt="NurtureAISpace Logo" class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg border border-orange-500/30 shadow-md shadow-orange-500/20 object-contain bg-slate-950 p-0.5 shrink-0" />
           <div class="flex flex-col min-w-0">
             <div class="flex items-center space-x-2">
               <span class="font-bold tracking-tight text-white text-base sm:text-lg font-mono whitespace-nowrap">NURTURE<span class="text-orange-400">AI</span><span class="text-cyan-400 font-semibold">SPACE</span></span>
               <span class="bg-orange-500/20 text-orange-400 border border-orange-500/40 text-[9px] font-mono px-1.5 py-0.5 rounded font-semibold uppercase whitespace-nowrap">Sol-450 MVP</span>
             </div>
-            <p class="hidden 2xl:block text-[11px] text-slate-400 font-mono truncate">Autonomous Space Nutrition &amp; Bio-Life Support System (N-BLSS)</p>
+            <p class="hidden md:block text-[11px] text-slate-400 font-mono truncate">Autonomous Space Nutrition &amp; Bio-Life Support System (N-BLSS)</p>
           </div>
         </div>
 
-        <!-- Desktop Navigation Tabs (Visible on 2xl: 1536px+) -->
-        <nav class="hidden 2xl:flex items-center space-x-1 font-mono text-xs shrink-0">
-          <button class="nav-tab active flex items-center space-x-1.5 px-3 py-2 rounded-md font-medium transition bg-orange-500 text-white shadow-md shadow-orange-500/25" data-target="dashboardView">
-            <i class="fa-solid fa-chart-line"></i>
-            <span>Dashboard</span>
-          </button>
-          <button class="nav-tab flex items-center space-x-1.5 px-3 py-2 rounded-md font-medium transition text-slate-300 hover:bg-slate-800" data-target="datalabView">
-            <i class="fa-solid fa-database"></i>
-            <span>Data Lab</span>
-          </button>
-          <button class="nav-tab flex items-center space-x-1.5 px-3 py-2 rounded-md font-medium transition text-emerald-400 hover:bg-slate-800" data-target="ganjaBioLabView">
-            <i class="fa-solid fa-seedling"></i>
-            <span>Bio-Agro Lab</span>
-          </button>
-          <button class="nav-tab flex items-center space-x-1.5 px-3 py-2 rounded-md font-medium transition text-slate-300 hover:bg-slate-800" data-target="predictionView">
-            <i class="fa-solid fa-fire-flame-curved"></i>
-            <span>Arrhenius</span>
-          </button>
-          <button class="nav-tab flex items-center space-x-1.5 px-3 py-2 rounded-md font-medium transition text-slate-300 hover:bg-slate-800" data-target="optimizerView">
-            <i class="fa-solid fa-microchip"></i>
-            <span>SciPy Optimizer</span>
-          </button>
-          <button class="nav-tab flex items-center space-x-1.5 px-3 py-2 rounded-md font-medium transition text-slate-300 hover:bg-slate-800" data-target="simulatorView">
-            <i class="fa-solid fa-compass"></i>
-            <span>Mission Simulator</span>
-          </button>
-          <button class="nav-tab flex items-center space-x-1.5 px-3 py-2 rounded-md font-medium transition text-slate-300 hover:bg-slate-800" data-target="architectureView">
-            <i class="fa-solid fa-atom"></i>
-            <span>Architecture &amp; Math</span>
-          </button>
-        </nav>
-
         <!-- Right Side: Status Badge & Code Access -->
         <div class="flex items-center space-x-2 sm:space-x-3 shrink-0">
-          <div class="hidden sm:flex items-center space-x-1.5 px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono whitespace-nowrap">
+          <div class="flex items-center space-x-1.5 px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono whitespace-nowrap shadow-sm">
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             <span>NASA STD-3001 OK</span>
           </div>
-          <a href="https://github.com/NurtureAISpace/mars-food-intelligence" target="_blank" class="p-2 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition text-sm flex items-center space-x-1" title="Private Core Repository">
-            <i class="fa-brands fa-github text-base"></i>
+          <a href="https://github.com/NurtureAISpace/mars-food-intelligence" target="_blank" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition text-xs font-mono flex items-center space-x-1.5 border border-slate-700/60" title="Private Core Repository">
+            <i class="fa-brands fa-github text-sm"></i>
+            <span class="hidden sm:inline">Core Repo</span>
           </a>
         </div>
       </div>
     </div>
-  </header>
 
-  <!-- Secondary Responsive Tab Bar (Seamlessly active for Laptop, Tablet, Mobile screens < 2xl) -->
-  <div class="2xl:hidden border-b border-slate-800 bg-slate-900/95 backdrop-blur-md px-3 py-2 overflow-x-auto flex items-center space-x-1.5 font-mono text-xs whitespace-nowrap sticky top-16 z-40">
-    <button class="nav-tab active px-3 py-1.5 rounded-md bg-orange-500 text-white font-medium" data-target="dashboardView"><i class="fa-solid fa-chart-line mr-1"></i> Dashboard</button>
-    <button class="nav-tab px-3 py-1.5 rounded-md text-slate-300 hover:bg-slate-800 font-medium" data-target="datalabView"><i class="fa-solid fa-database mr-1"></i> Data Lab</button>
-    <button class="nav-tab px-3 py-1.5 rounded-md text-emerald-400 hover:bg-slate-800 font-medium" data-target="ganjaBioLabView"><i class="fa-solid fa-seedling mr-1"></i> Bio-Agro Lab</button>
-    <button class="nav-tab px-3 py-1.5 rounded-md text-slate-300 hover:bg-slate-800 font-medium" data-target="predictionView"><i class="fa-solid fa-fire-flame-curved mr-1"></i> Arrhenius</button>
-    <button class="nav-tab px-3 py-1.5 rounded-md text-slate-300 hover:bg-slate-800 font-medium" data-target="optimizerView"><i class="fa-solid fa-microchip mr-1"></i> SciPy Optimizer</button>
-    <button class="nav-tab px-3 py-1.5 rounded-md text-slate-300 hover:bg-slate-800 font-medium" data-target="simulatorView"><i class="fa-solid fa-compass mr-1"></i> Simulator</button>
-    <button class="nav-tab px-3 py-1.5 rounded-md text-slate-300 hover:bg-slate-800 font-medium" data-target="architectureView"><i class="fa-solid fa-atom mr-1"></i> Math</button>
-  </div>
+    <!-- Tier 2: Mission Control Tab Navigation (Universal Across All Devices) -->
+    <div class="border-t border-slate-800/80 bg-slate-900/90 backdrop-blur-md">
+      <div class="w-full max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <nav class="flex items-center space-x-1.5 py-1.5 overflow-x-auto no-scrollbar font-mono text-xs whitespace-nowrap">
+          <button class="nav-tab active flex items-center space-x-1.5 px-3 py-1.5 rounded-md font-medium transition bg-orange-500 text-white shadow-sm" data-target="dashboardView">
+            <i class="fa-solid fa-chart-line"></i>
+            <span>Dashboard</span>
+          </button>
+          <button class="nav-tab flex items-center space-x-1.5 px-3 py-1.5 rounded-md font-medium transition text-slate-300 hover:bg-slate-800 hover:text-white" data-target="datalabView">
+            <i class="fa-solid fa-database"></i>
+            <span>Data Lab</span>
+          </button>
+          <button class="nav-tab flex items-center space-x-1.5 px-3 py-1.5 rounded-md font-medium transition text-emerald-400 hover:bg-slate-800 hover:text-emerald-300" data-target="ganjaBioLabView">
+            <i class="fa-solid fa-seedling"></i>
+            <span>Bio-Agro Lab</span>
+          </button>
+          <button class="nav-tab flex items-center space-x-1.5 px-3 py-1.5 rounded-md font-medium transition text-slate-300 hover:bg-slate-800 hover:text-white" data-target="predictionView">
+            <i class="fa-solid fa-fire-flame-curved"></i>
+            <span>Arrhenius</span>
+          </button>
+          <button class="nav-tab flex items-center space-x-1.5 px-3 py-1.5 rounded-md font-medium transition text-slate-300 hover:bg-slate-800 hover:text-white" data-target="optimizerView">
+            <i class="fa-solid fa-microchip"></i>
+            <span>SciPy Optimizer</span>
+          </button>
+          <button class="nav-tab flex items-center space-x-1.5 px-3 py-1.5 rounded-md font-medium transition text-slate-300 hover:bg-slate-800 hover:text-white" data-target="simulatorView">
+            <i class="fa-solid fa-compass"></i>
+            <span>Mission Simulator</span>
+          </button>
+          <button class="nav-tab flex items-center space-x-1.5 px-3 py-1.5 rounded-md font-medium transition text-slate-300 hover:bg-slate-800 hover:text-white" data-target="architectureView">
+            <i class="fa-solid fa-atom"></i>
+            <span>Architecture &amp; Math</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
 
   <!-- Main Container -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
