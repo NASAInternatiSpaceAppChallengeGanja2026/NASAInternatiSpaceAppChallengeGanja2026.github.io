@@ -76,7 +76,7 @@
             <i class="fa-solid fa-tv text-xs"></i>
             <span class="hidden sm:inline">7-Slide Deck</span>
           </a>
-          <a href="https://github.com/NurtureAISpace/mars-food-intelligence" target="_blank" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition text-xs font-mono flex items-center space-x-1.5 border border-slate-700/60" title="Private Core Repository">
+          <a href="https://github.com/NurtureAISpace/mars-food-intelligence" target="_blank" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition text-xs font-mono flex items-center space-x-1.5 border border-slate-700/60" title="Core code repository">
             <i class="fa-brands fa-github text-sm"></i>
             <span class="hidden sm:inline">Core Repo</span>
           </a>
@@ -395,7 +395,7 @@
             </div>
             <div class="border-l border-slate-800 pl-4">
               <span class="text-slate-500 text-[10px] block">ROOT MEAN SQ ERROR</span>
-              <span class="text-lg font-bold text-orange-400">27.1 pp</span>
+              <span class="text-lg font-bold text-orange-400">27.3 pp</span>
             </div>
             <div class="border-l border-slate-800 pl-4">
               <span class="text-slate-500 text-[10px] block">BENCHMARK SERIES</span>
@@ -987,7 +987,7 @@
             D(t+1) = D_t(1 - k_D) + &alpha;_D &middot; I_{D,t}
           </div>
           <p class="text-slate-400 text-[11px]">
-            Uses k_D = 0.00181 day⁻¹ (~25% loss over 180 days without supplementation; Rice et al., NTRS 20080026180) and insufficiency threshold 50 nmol/L.
+            First-order serum vitamin D decline without UV-B, based on ISS data (Rice/Zwart/Smith, NTRS 20080026180). Parameters are listed in docs/DATA_SOURCES.md.
           </p>
         </div>
 
@@ -999,7 +999,7 @@
             P(t+1) = min(P_max, P_t(1-k) + a&middot;I_t) &bull; t* = ln((P_0-P_eq)/(P_thr-P_eq))/k
           </div>
           <p class="text-slate-400 text-[11px]">
-            Couples Arrhenius ration retention into astronaut body pools (Vit C k = 0.0225/Sol, B1 k = 0.0385/Sol) with personal baseline &plusmn;2&sigma; z-scores.
+            Couples Arrhenius ration retention into astronaut body pools with personal baseline &plusmn;2&sigma; z-scores.
           </p>
         </div>
 

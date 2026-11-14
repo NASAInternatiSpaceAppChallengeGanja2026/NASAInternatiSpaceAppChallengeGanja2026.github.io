@@ -23,17 +23,16 @@
 ### 🌐 Official Live Platform
 - **Interactive Web Platform:** [https://nurtureaispace.github.io](https://nurtureaispace.github.io)
 - **Organization:** [https://github.com/NurtureAISpace](https://github.com/NurtureAISpace)
-- **Core Technology:** First-principles Arrhenius degradation kinetics, SciPy linear constrained diet optimization, and closed-loop bio-regenerative agriculture (BLSS).
+- **Core Technology:** First-principles Arrhenius degradation kinetics, SciPy linear constrained diet optimization, and a synthetic greenhouse model.
 - **Lead Architect Contact:** Suleyman Hajizadeh (`suleyman.hacizade1@gmail.com`)
 
 ---
 
-### 🔒 Intellectual Property & Proprietary Codebase Access
-The core backend architecture, Arrhenius degradation algorithms, data ingestion pipelines, and SciPy optimization services are hosted in a **Private Repository**:
-- Repository: [`NurtureAISpace/mars-food-intelligence`](https://github.com/NurtureAISpace/mars-food-intelligence) *(Private)*
+### Code, data sources and honesty notes
+This is a research prototype (not a medical device) built for NASA Space Apps Challenge 2026, Ganja. Most scenarios are synthetic and are labeled as synthetic in the app.
+- Main code: [`NurtureAISpace/mars-food-intelligence`](https://github.com/NurtureAISpace/mars-food-intelligence). If you cannot open it, contact `suleyman.hacizade1@gmail.com`.
+- Every parameter and its source: `docs/DATA_SOURCES.md` in that repository.
+- Real NASA data used: NASA OSDR OSD-569 (CBC) and OSD-575 (CMP) from Inspiration4, plus cited NASA reports (JSC 2005 nutrition requirements, BVAD REV1, ISS vitamin D).
+- Not all code was written during the hackathon; see "Built before vs during the hackathon" in that repository's README.
 
-> **Peer Review & Verification Policy:**  
-> Evaluators, scientific reviewers, and accredited partners wishing to review the full private codebase, test suite, and raw calibration datasets may request immediate access by contacting:  
-> ✉️ **`suleyman.hacizade1@gmail.com`**
-
-This public repository contains the compiled client and interactive simulation engine for the live platform.
+This public repository contains the static web client and the in-browser simulation for the live site.
