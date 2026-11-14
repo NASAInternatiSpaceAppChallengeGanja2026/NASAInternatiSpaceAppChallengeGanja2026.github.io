@@ -49,30 +49,30 @@
 </head>
 <body class="bg-mars-dark text-slate-100 font-sans antialiased selection:bg-orange-500 selection:text-white">
 
-  <!-- Top Global Navigation Header (Ultra-Responsive Two-Tier) -->
-  <header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur-md sticky top-0 z-50 shadow-lg">
+  <!-- Top Global Navigation Header (NOVA Deep Space Glassmorphism) -->
+  <header class="border-b border-white/10 bg-slate-950/90 backdrop-blur-xl sticky top-0 z-50 shadow-2xl">
     <!-- Top Bar: Identity & Status -->
     <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-14 sm:h-16 gap-3">
         <!-- Brand Logo & Title -->
         <div class="flex items-center space-x-3 shrink-0 min-w-0">
-          <img src="logo.svg?v=2" alt="NurtureAISpace Logo" class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg border border-orange-500/30 shadow-md shadow-orange-500/20 object-contain bg-slate-950 p-0.5 shrink-0" />
+          <img src="logo.svg?v=2" alt="NurtureAISpace Logo" class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl border border-orange-500/40 shadow-lg shadow-orange-500/25 object-contain bg-slate-950 p-0.5 shrink-0" />
           <div class="flex flex-col min-w-0">
             <div class="flex items-center space-x-2">
               <span class="font-bold tracking-tight text-white text-base sm:text-lg font-mono whitespace-nowrap">NURTURE<span class="text-orange-400">AI</span><span class="text-cyan-400 font-semibold">SPACE</span></span>
-              <span class="bg-orange-500/20 text-orange-400 border border-orange-500/40 text-[9px] font-mono px-1.5 py-0.5 rounded font-semibold uppercase whitespace-nowrap">Sol-450 MVP</span>
+              <span class="bg-orange-500/20 text-orange-300 border border-orange-500/40 text-[9px] font-mono px-2 py-0.5 rounded-full font-semibold uppercase whitespace-nowrap">Sol-450 MVP</span>
             </div>
-            <p class="hidden md:block text-[11px] text-slate-400 font-mono truncate">Autonomous Space Nutrition &amp; Bio-Life Support System (N-BLSS)</p>
+            <p class="hidden md:block text-[11px] text-slate-300 font-mono truncate">Autonomous Space Nutrition &amp; Bio-Life Support System (N-BLSS)</p>
           </div>
         </div>
 
-        <!-- Right Side: Status Badge & Code Access -->
+        <!-- Right Side: Honest Status Badge & Code Access -->
         <div class="flex items-center space-x-2 sm:space-x-3 shrink-0">
-          <div class="flex items-center space-x-1.5 px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono whitespace-nowrap shadow-sm">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span>NASA STD-3001 OK</span>
+          <div class="flex items-center space-x-1.5 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-mono whitespace-nowrap shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+            <span>Decision Support Prototype</span>
           </div>
-          <a href="https://github.com/NurtureAISpace/mars-food-intelligence" target="_blank" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition text-xs font-mono flex items-center space-x-1.5 border border-slate-700/60" title="Private Core Repository">
+          <a href="https://github.com/NurtureAISpace/mars-food-intelligence" target="_blank" class="px-3 py-1 rounded-full bg-white/10 hover:bg-white/15 text-slate-200 hover:text-white transition text-xs font-mono flex items-center space-x-1.5 border border-white/15" title="Core Repository">
             <i class="fa-brands fa-github text-sm"></i>
             <span class="hidden sm:inline">Core Repo</span>
           </a>
@@ -80,35 +80,40 @@
       </div>
     </div>
 
-    <!-- Tier 2: Mission Control Tab Navigation (Universal Across All Devices) -->
-    <div class="border-t border-slate-800/80 bg-slate-900/90 backdrop-blur-md">
+    <!-- Tier 2: NOVA Glass Pill Navigation (Crew Health Hero First) -->
+    <div class="border-t border-white/10 bg-slate-900/75 backdrop-blur-xl">
       <div class="w-full max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-        <nav class="flex items-center space-x-1.5 py-1.5 overflow-x-auto no-scrollbar font-mono text-xs whitespace-nowrap">
-          <button class="nav-tab active flex items-center space-x-1.5 px-3 py-1.5 rounded-md font-medium transition bg-orange-500 text-white shadow-sm" data-target="dashboardView">
+        <nav class="flex items-center space-x-1.5 py-2 overflow-x-auto no-scrollbar font-mono text-xs whitespace-nowrap">
+          <button class="nav-tab active flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full font-bold transition bg-orange-500 text-white shadow-lg shadow-orange-500/25" data-target="crewHealthView">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <span>Crew Health</span>
+            <span class="text-[9px] px-1.5 py-0.2 rounded-full bg-black/30 text-orange-200 uppercase">Hero</span>
+          </button>
+          <button class="nav-tab flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full font-medium transition text-slate-300 hover:bg-slate-800 hover:text-white" data-target="dashboardView">
             <i class="fa-solid fa-chart-line"></i>
-            <span>Dashboard</span>
+            <span>Habitat Telemetry</span>
           </button>
-          <button class="nav-tab flex items-center space-x-1.5 px-3 py-1.5 rounded-md font-medium transition text-slate-300 hover:bg-slate-800 hover:text-white" data-target="datalabView">
-            <i class="fa-solid fa-database"></i>
-            <span>Data Lab</span>
-          </button>
-          <button class="nav-tab flex items-center space-x-1.5 px-3 py-1.5 rounded-md font-medium transition text-emerald-400 hover:bg-slate-800 hover:text-emerald-300" data-target="ganjaBioLabView">
-            <i class="fa-solid fa-seedling"></i>
-            <span>Bio-Agro Lab</span>
-          </button>
-          <button class="nav-tab flex items-center space-x-1.5 px-3 py-1.5 rounded-md font-medium transition text-slate-300 hover:bg-slate-800 hover:text-white" data-target="predictionView">
+          <button class="nav-tab flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full font-medium transition text-slate-300 hover:bg-slate-800 hover:text-white" data-target="predictionView">
             <i class="fa-solid fa-fire-flame-curved"></i>
-            <span>Arrhenius</span>
+            <span>Arrhenius Kinetics</span>
           </button>
-          <button class="nav-tab flex items-center space-x-1.5 px-3 py-1.5 rounded-md font-medium transition text-slate-300 hover:bg-slate-800 hover:text-white" data-target="optimizerView">
+          <button class="nav-tab flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full font-medium transition text-slate-300 hover:bg-slate-800 hover:text-white" data-target="optimizerView">
             <i class="fa-solid fa-microchip"></i>
             <span>SciPy Optimizer</span>
           </button>
-          <button class="nav-tab flex items-center space-x-1.5 px-3 py-1.5 rounded-md font-medium transition text-slate-300 hover:bg-slate-800 hover:text-white" data-target="simulatorView">
+          <button class="nav-tab flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full font-medium transition text-slate-300 hover:bg-slate-800 hover:text-white" data-target="simulatorView">
             <i class="fa-solid fa-compass"></i>
             <span>Mission Simulator</span>
           </button>
-          <button class="nav-tab flex items-center space-x-1.5 px-3 py-1.5 rounded-md font-medium transition text-slate-300 hover:bg-slate-800 hover:text-white" data-target="architectureView">
+          <button class="nav-tab flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full font-medium transition text-emerald-400 hover:bg-slate-800 hover:text-emerald-300" data-target="ganjaBioLabView">
+            <i class="fa-solid fa-seedling"></i>
+            <span>Bio-Agro Lab</span>
+          </button>
+          <button class="nav-tab flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full font-medium transition text-slate-300 hover:bg-slate-800 hover:text-white" data-target="datalabView">
+            <i class="fa-solid fa-database"></i>
+            <span>Data Lab</span>
+          </button>
+          <button class="nav-tab flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full font-medium transition text-slate-300 hover:bg-slate-800 hover:text-white" data-target="architectureView">
             <i class="fa-solid fa-atom"></i>
             <span>Architecture &amp; Math</span>
           </button>
@@ -120,8 +125,232 @@
   <!-- Main Container -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
+    <!-- ==================== VIEW 0 (HERO): CREW HEALTH MONITOR ==================== -->
+    <section id="crewHealthView" class="tab-view space-y-6">
+      <!-- NOVA Deep Space Hero Banner -->
+      <div class="relative rounded-3xl overflow-hidden nova-panel border border-white/15 shadow-2xl">
+        <div class="absolute inset-0 opacity-30 pointer-events-none">
+          <img src="nova-space.png" alt="Deep Space Orbit" class="w-full h-full object-cover object-right" />
+          <div class="absolute inset-0 bg-gradient-to-r from-[#030509] via-[#030509]/90 to-transparent"></div>
+        </div>
+        <div class="relative p-6 sm:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+          <div class="max-w-2xl space-y-3">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-3 py-1 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider bg-cyan-500/15 text-cyan-300 border border-cyan-500/30">
+                ● Synthetic — Simulated Mars Crew + Arrhenius Food-to-Blood Pipeline
+              </span>
+              <span class="px-3 py-1 rounded-full text-[11px] font-mono font-semibold bg-orange-500/15 text-orange-300 border border-orange-500/30">
+                NASA Space Apps 2026 Challenge Hero
+              </span>
+            </div>
+            <h1 class="text-2xl sm:text-4xl font-bold text-white tracking-tight leading-tight">
+              FORECASTING THE GAP BETWEEN <span class="text-orange-400">BLOOD DRAWS</span>.
+            </h1>
+            <p class="text-sm sm:text-base text-slate-200 leading-relaxed">
+              NASA only learns an astronaut’s vitamin status after blood samples return to Earth. We couple <strong class="text-white">Arrhenius food storage kinetics</strong> to <strong class="text-cyan-300">1-compartment body vitamin pools</strong> and <strong class="text-emerald-300">personal-baseline z-score anomaly detection</strong> — warning ~50 Sols before clinical deficiency.
+            </p>
+          </div>
+
+          <!-- 1-Click Judge Demo Story Presets -->
+          <div class="nova-panel-orange rounded-2xl p-4 sm:p-5 shrink-0 lg:w-96 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-orange-300">
+                <i class="fa-solid fa-wand-magic-sparkles mr-1"></i> 1-Click Demo Story Presets
+              </span>
+              <span id="chSolBadge" class="text-xs font-mono font-bold px-2.5 py-0.5 rounded-full bg-orange-500 text-white">SOL 192</span>
+            </div>
+            <div class="grid grid-cols-2 gap-2 font-mono text-xs">
+              <button class="ch-preset-btn px-3 py-2 rounded-xl bg-slate-900/90 hover:bg-slate-800 text-slate-200 border border-white/10 text-left transition" data-sol="149" data-fail="1">
+                <span class="block text-[10px] text-emerald-400 font-bold">1. Pre-Failure</span>
+                <span class="font-bold text-white">Sol 149 · Nominal</span>
+              </button>
+              <button class="ch-preset-btn px-3 py-2 rounded-xl bg-slate-900/90 hover:bg-slate-800 text-slate-200 border border-white/10 text-left transition" data-sol="165" data-fail="1">
+                <span class="block text-[10px] text-amber-400 font-bold">2. Early Drift</span>
+                <span class="font-bold text-white">Sol 165 · Watch</span>
+              </button>
+              <button class="ch-preset-btn px-3 py-2 rounded-xl bg-orange-500 text-white border border-orange-300 text-left transition shadow-lg shadow-orange-500/30" data-sol="192" data-fail="1">
+                <span class="block text-[10px] text-orange-100 font-bold">3. Early Warning</span>
+                <span class="font-bold text-white">Sol 192 · ACT Alert</span>
+              </button>
+              <button class="ch-preset-btn px-3 py-2 rounded-xl bg-slate-900/90 hover:bg-slate-800 text-slate-200 border border-white/10 text-left transition" data-sol="192" data-fail="0">
+                <span class="block text-[10px] text-cyan-300 font-bold">4. Control Check</span>
+                <span class="font-bold text-white">No Failure · 0 Alerts</span>
+              </button>
+            </div>
+            <p id="chPresetDesc" class="text-[11px] font-mono text-orange-200">
+              Cooling failure at Sol 150 (+28°C) accelerates food Vitamin C &amp; B1 loss → ACT alert triggers at Sol 192 (~50 Sols before scurvy threshold).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Astronaut Status Cards -->
+      <div id="chCrewGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Populated dynamically by Crew Health script below -->
+      </div>
+
+      <!-- Vitamin Pool Trajectory Chart + Explainable Alert & Diet Prescription -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="glass-panel rounded-2xl p-5 sm:p-6 lg:col-span-2 space-y-4">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-3">
+            <div>
+              <h3 class="font-mono font-bold text-white text-sm uppercase">
+                <span id="chSelectedCrewName">Cmdr. Elena Rostova</span> — Body Vitamin Pool &amp; Baseline Band
+              </h3>
+              <p class="text-xs text-slate-300 font-mono mt-0.5">
+                First-order compartment pharmacokinetics coupled to Arrhenius storage decay (Sol 0 → Sol 300)
+              </p>
+            </div>
+            <div class="flex items-center space-x-3 font-mono text-[11px]">
+              <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-emerald-400 inline-block mr-1"></span> Vitamin C Pool</span>
+              <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block mr-1"></span> Thiamine B1 Pool</span>
+              <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-red-400 inline-block mr-1"></span> Risk Cutoff</span>
+            </div>
+          </div>
+
+          <div class="bg-slate-950/90 rounded-xl p-3 border border-white/10">
+            <svg id="chPoolSvgChart" viewBox="0 0 700 250" class="w-full h-auto"></svg>
+          </div>
+
+          <div class="grid grid-cols-3 gap-3 font-mono text-xs">
+            <div class="p-3 rounded-xl bg-slate-900/90 border border-white/10">
+              <span class="text-slate-400 text-[10px] block uppercase">Vitamin C Body Pool</span>
+              <span id="chMetricVitC" class="text-lg font-bold text-amber-400 block mt-0.5">64.2%</span>
+              <span class="text-[10px] text-slate-400">Risk threshold: 40%</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-900/90 border border-white/10">
+              <span class="text-slate-400 text-[10px] block uppercase">Thiamine (B1) Pool</span>
+              <span id="chMetricB1" class="text-lg font-bold text-orange-400 block mt-0.5">58.4%</span>
+              <span class="text-[10px] text-slate-400">Crossing risk in ~48 Sols</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-900/90 border border-white/10">
+              <span class="text-slate-400 text-[10px] block uppercase">Resting HR Z-Score</span>
+              <span id="chMetricZ" class="text-lg font-bold text-orange-400 block mt-0.5">+2.4σ vs Baseline</span>
+              <span class="text-[10px] text-slate-400">Personal L-90..Sol 30 band</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Explainable Alert & Prescriptive Diet Action -->
+        <div class="nova-panel-orange rounded-2xl p-5 sm:p-6 space-y-4 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between border-b border-orange-500/30 pb-3">
+              <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-bell text-orange-400"></i>
+                <h3 class="font-mono font-bold text-white text-sm uppercase">Explainable Clinical Advisory</h3>
+              </div>
+              <span id="chAlertBadge" class="px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-orange-500 text-white">ACT NOW</span>
+            </div>
+
+            <div id="chAlertBox" class="space-y-3 font-mono text-xs">
+              <div class="p-3.5 rounded-xl bg-black/40 border border-orange-500/40 space-y-1.5">
+                <span class="text-orange-400 font-bold block">WHAT CHANGED &amp; SINCE WHEN</span>
+                <p class="text-slate-200 leading-relaxed">
+                  Chiller loop fault at <strong class="text-white">Sol 150</strong> raised stowage to 28°C. Arrhenius decay reduced daily Thiamine intake by 38% and Vitamin C by 44% over 42 Sols.
+                </p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 space-y-1.5">
+                <span class="text-emerald-300 font-bold block">PRESCRIPTIVE COUNTERMEASURE (WHAT TO EAT)</span>
+                <p class="text-slate-200 leading-relaxed">
+                  Add <strong class="text-white">+50g/day Fresh Microgreens (GHM-01)</strong> (+74 mg Vit-C) + <strong class="text-white">+100g Legume Ration (GC-26)</strong> (+0.48 mg B1) to restore pool &gt;85% within 14 Sols.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-slate-300">
+            <span>Decision-Support Prototype</span>
+            <span class="text-cyan-300">Lead Time: +48 Sols</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real NASA OSDR Inspiration4 Benchmark Panel -->
+      <div class="nova-panel-emerald rounded-2xl p-6 space-y-5">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-emerald-500/30 pb-4">
+          <div class="space-y-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-3 py-1 rounded-full text-xs font-mono font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-400/50">
+                ● Real — NASA OSDR, Inspiration4 (OSD-569 &amp; OSD-575)
+              </span>
+              <span class="text-xs font-mono text-slate-300">4 Astronauts • L-92, L-44, L-3 Pre-Flight vs R+1, R+45, R+82, R+194 Post-Flight</span>
+            </div>
+            <h3 class="text-lg font-bold font-mono text-white pt-1">
+              PERSONAL-BASELINE Z-SCORE METHOD VALIDATED ON REAL SPACEFLIGHT BLOOD PANELS
+            </h3>
+          </div>
+          <div class="flex items-center space-x-4 font-mono text-xs shrink-0">
+            <div class="p-3 rounded-xl bg-black/40 border border-emerald-500/30 text-center">
+              <span class="text-[10px] text-slate-400 block uppercase">Consistent Signal (R+1)</span>
+              <span class="text-base font-bold text-emerald-400">MCV Drop in 4/4 Crew</span>
+            </div>
+            <div class="p-3 rounded-xl bg-black/40 border border-amber-500/30 text-center">
+              <span class="text-[10px] text-slate-400 block uppercase">Small-n Honesty Check</span>
+              <span class="text-base font-bold text-amber-300">L-3: 26% vs R+1: 20%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 font-mono text-xs">
+          <div class="lg:col-span-2 overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="text-slate-300 border-b border-white/15 text-[11px] uppercase">
+                  <th class="pb-2">Crew ID (OSDR)</th>
+                  <th class="pb-2">Pre-Flight Baseline MCV (L-92..L-3)</th>
+                  <th class="pb-2">Landing R+1 MCV</th>
+                  <th class="pb-2">Personal Z-Score</th>
+                  <th class="pb-2 text-right">Recovery (R+45)</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-white/10 text-slate-200">
+                <tr>
+                  <td class="py-2.5 font-bold text-white">C001</td>
+                  <td class="py-2.5">90.7 ± 0.58 fL</td>
+                  <td class="py-2.5 text-amber-300 font-bold">86.0 fL</td>
+                  <td class="py-2.5 text-orange-400 font-bold">z = -8.10 (Flag)</td>
+                  <td class="py-2.5 text-right text-emerald-400">90.0 fL (Nominal)</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 font-bold text-white">C002</td>
+                  <td class="py-2.5">90.0 ± 1.00 fL</td>
+                  <td class="py-2.5 text-amber-300 font-bold">85.0 fL</td>
+                  <td class="py-2.5 text-orange-400 font-bold">z = -5.00 (Flag)</td>
+                  <td class="py-2.5 text-right text-emerald-400">89.0 fL (Nominal)</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 font-bold text-white">C003</td>
+                  <td class="py-2.5">86.3 ± 0.58 fL</td>
+                  <td class="py-2.5 text-amber-300 font-bold">84.0 fL</td>
+                  <td class="py-2.5 text-orange-400 font-bold">z = -4.04 (Flag)</td>
+                  <td class="py-2.5 text-right text-emerald-400">88.0 fL (Nominal)</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 font-bold text-white">C004</td>
+                  <td class="py-2.5">88.7 ± 1.15 fL</td>
+                  <td class="py-2.5 text-amber-300 font-bold">85.0 fL</td>
+                  <td class="py-2.5 text-orange-400 font-bold">z = -3.18 (Flag)</td>
+                  <td class="py-2.5 text-right text-emerald-400">89.0 fL (Nominal)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2 text-slate-300 leading-relaxed">
+            <span class="text-emerald-300 font-bold block uppercase">Scientific Validity &amp; Honest Disclosure</span>
+            <p class="text-[11px]">
+              Running our personal-baseline z-score detector (`|z| &gt; 2`) on real NASA OSDR Inspiration4 CBC &amp; CMP blood draws (`OSD-569`, `OSD-575`) identifies a unanimous drop in Mean Corpuscular Volume (MCV) across all 4 crew at R+1.
+            </p>
+            <p class="text-[11px] text-amber-200/90">
+              <strong>Statistical caveat:</strong> With only 3 pre-flight baseline points per crew member, single-analyte z-score flags alone sit near noise level (pre-flight L-3 leave-one-out control flags 26% vs R+1 20%), motivating our multi-day persistence + dietary intake coupling on Mars missions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ==================== VIEW 1: DASHBOARD ==================== -->
-    <section id="dashboardView" class="tab-view space-y-6">
+    <section id="dashboardView" class="tab-view hidden space-y-6">
       <!-- Sol Timeline Scrubber -->
       <div class="glass-panel rounded-xl p-5 border border-slate-800 shadow-xl">
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
