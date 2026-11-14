@@ -72,6 +72,10 @@
             <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
             <span>Decision Support Prototype</span>
           </div>
+          <a href="slides.html" class="px-2.5 py-1 rounded-full bg-orange-500/20 hover:bg-orange-500/30 text-orange-300 hover:text-white transition text-xs font-mono flex items-center space-x-1.5 border border-orange-500/40" title="Official 7-Slide Presentation Deck">
+            <i class="fa-solid fa-tv text-xs"></i>
+            <span class="hidden sm:inline">7-Slide Deck</span>
+          </a>
           <a href="https://github.com/NurtureAISpace/mars-food-intelligence" target="_blank" class="px-3 py-1 rounded-full bg-white/10 hover:bg-white/15 text-slate-200 hover:text-white transition text-xs font-mono flex items-center space-x-1.5 border border-white/15" title="Core Repository">
             <i class="fa-brands fa-github text-sm"></i>
             <span class="hidden sm:inline">Core Repo</span>
@@ -105,6 +109,10 @@
             <i class="fa-solid fa-compass"></i>
             <span>Mission Simulator</span>
           </button>
+          <button class="nav-tab flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full font-medium transition text-purple-400 hover:bg-slate-800 hover:text-purple-300" data-target="lifeSupportView">
+            <i class="fa-solid fa-droplet"></i>
+            <span>Life Support Sim</span>
+          </button>
           <button class="nav-tab flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full font-medium transition text-emerald-400 hover:bg-slate-800 hover:text-emerald-300" data-target="ganjaBioLabView">
             <i class="fa-solid fa-seedling"></i>
             <span>Bio-Agro Lab</span>
@@ -116,6 +124,10 @@
           <button class="nav-tab flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full font-medium transition text-slate-300 hover:bg-slate-800 hover:text-white" data-target="architectureView">
             <i class="fa-solid fa-atom"></i>
             <span>Architecture &amp; Math</span>
+          </button>
+          <button class="nav-tab flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full font-medium transition text-amber-400 hover:bg-slate-800 hover:text-amber-300" data-target="judgingView">
+            <i class="fa-solid fa-award"></i>
+            <span>NASA Data &amp; Q&amp;A</span>
           </button>
         </nav>
       </div>
@@ -1127,8 +1139,8 @@
           <pre class="font-mono text-xs text-slate-300">
 ┌───────────────────────────────────────────────────────────────────────────────────────────┐
 │                     MARS HABITAT CLIENT PORTAL (GitHub Pages Static)                      │
-│   • Executive Sol-450 Dashboard    • Bio-Regenerative Agro Lab     • SciPy Optimizer UI        │
-│   • Arrhenius Degradation Studio   • Space Food Data Lab      • Sol Stress Simulator      │
+│   • Executive Sol-450 Dashboard    • Bio-Regenerative Agro Lab     • SciPy Optimizer UI   │
+│   • Arrhenius Degradation Studio   • Crew Health &amp; i4 ML Monitor   • ECLSS &amp; Regolith Sim │
 └─────────────────────────────────────────────┬─────────────────────────────────────────────┘
                                               │ (RESTful JSON / Local Offline Engine)
 ┌─────────────────────────────────────────────▼─────────────────────────────────────────────┐
@@ -1136,33 +1148,35 @@
 │  ├── /api/v1/dashboard     : Real-time telemetry, Sol-450 mass balance, thermal power     │
 │  ├── /api/v1/datalab       : Space food catalog, 100% schema audit, JSC ground-truth      │
 │  ├── /api/v1/ganja         : ADAU Ganja cultivars (GHM-01, GC-26), BLSS mass balance      │
-│  ├── /api/v1/prediction    : Arrhenius thermodynamic degradation & Drop-Dead Sols         │
+│  ├── /api/v1/prediction    : Arrhenius thermodynamic degradation &amp; Drop-Dead Sols         │
 │  ├── /api/v1/optimization  : SciPy HiGHS simplex linear programming diet solver           │
-│  └── /api/v1/simulator     : Dynamic Monte Carlo & thermal failure injection              │
+│  ├── /api/v1/simulator     : Dynamic Monte Carlo &amp; thermal failure injection              │
+│  ├── /api/v1/health        : Crew vitamin pools, personal baselines, IsolationForest, i4  │
+│  └── /api/v1/life-support  : ECLSS OGS electrolysis, Sabatier loop &amp; IoT regolith sensors │
 └───────────────────────┬───────────────────────────────────┬───────────────────────────────┘
                         │                                   │
 ┌───────────────────────▼──────────────┐   ┌────────────────▼───────────────────────────────┐
-│   THERMODYNAMIC SCIENTIFIC MODELS    │   │         GANJA AGRO-BLSS MASS ENGINE            │
-│  • Arrhenius Kinetics: k = A·e^(-Ea/RT)│   │  • ADAU Drought-Resilient Cultivars (GC-26)    │
-│  • 1st-Order Decay: C(t) = C0·e^(-k·t)│   │  • Hyper-dense Ascorbic Acid Synthesis (GHM-01)│
-│  • Drop-Dead Sol: t = ln(2)/k        │   │  • MGS-1 Perchlorate Bioremediation (GA-04)   │
-│  • Multi-Nutrient Viability Index    │   │  • Closed-Loop Gas Exchange (O2 / CO2 / H2O)   │
+│   THERMODYNAMIC &amp; HEALTH ML MODELS   │   │      ECLSS &amp; AGRO-BLSS MASS ENGINE             │
+│  • Arrhenius Kinetics: k = A·e^(-Ea/RT)│   │  • Sabatier: CO2 + 4H2 → CH4 + 2H2O (96.8%)   │
+│  • 1st-Order Pool: P(t+1)=P(1-k)+a·I │   │  • OGS Electrolysis: 2H2O → 2H2 + O2           │
+│  • Personal Baseline ±2σ &amp; IsoForest │   │  • IoT Capacitive Regolith VWC% Auto-Valves    │
+│  • NASA OSDR Inspiration4 (CBC/CMP)  │   │  • Closed-Loop Gas Exchange (O2 / CO2 / H2O)   │
 └──────────────────────────────────────┘   └────────────────────────────────────────────────┘
           </pre>
         </div>
       </div>
 
       <!-- Mathematical Formulations Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Arrhenius Degradation -->
         <div class="glass-panel rounded-xl p-5 border border-slate-800 space-y-3 font-mono text-xs">
           <h4 class="font-bold text-orange-400 uppercase text-sm">1. Arrhenius Kinetic Law</h4>
-          <p class="text-slate-300">Reaction rate constant \( k \) as a function of absolute temperature \( T \):</p>
+          <p class="text-slate-300">Reaction rate constant k as a function of absolute temperature T:</p>
           <div class="p-3 bg-slate-900 rounded-lg text-amber-400 font-bold text-center">
             k = A &middot; exp( -E_a / (R &middot; T) )
           </div>
           <p class="text-slate-400 text-[11px]">
-            Where \( A \) is the pre-exponential frequency factor, \( E_a \) is the activation energy (\( 	ext{kJ/mol} \)), \( R = 8.314462618	ext{ J/(mol}\cdot	ext{K)} \) is the ideal gas constant, and \( T \) is storage temperature in Kelvin.
+            Where A is the pre-exponential frequency factor, E_a is activation energy (kJ/mol), R = 8.314 J/(mol&middot;K), and T is storage temperature in Kelvin.
           </p>
         </div>
 
@@ -1174,19 +1188,19 @@
             min cᵀx  subject to  A_ub &middot; x &le; b_ub,  x &ge; 0
           </div>
           <p class="text-slate-400 text-[11px]">
-            Subject to NASA STD-3001 bounds: Daily energy &ge; 2,800 kcal, Protein &ge; 85g, Thiamine &ge; 1.2mg, Ascorbic acid &ge; 90mg, Rehydration water &le; 2.5 L/day. Solved with SciPy HiGHS simplex.
+            Subject to NASA STD-3001 bounds: Daily energy &ge; 2,800 kcal, Protein &ge; 85g, Thiamine &ge; 1.2mg, Ascorbic acid &ge; 90mg, Rehydration water &le; 2.5 L/day.
           </p>
         </div>
 
         <!-- BLSS Photosynthetic Light Use Efficiency -->
         <div class="glass-panel rounded-xl p-5 border border-slate-800 space-y-3 font-mono text-xs">
-          <h4 class="font-bold text-emerald-400 uppercase text-sm">3. N-BLSS Light Use Efficiency (LUE) (LUE)</h4>
+          <h4 class="font-bold text-emerald-400 uppercase text-sm">3. N-BLSS Light Use Efficiency (LUE)</h4>
           <p class="text-slate-300">Daily biomass yield under Martian controlled environment:</p>
           <div class="p-3 bg-slate-900 rounded-lg text-emerald-400 font-bold text-center">
             Y_biomass = Area &middot; &beta;_cultivar &middot; &radic;( DLI_actual / DLI_nominal )
           </div>
           <p class="text-slate-400 text-[11px]">
-            Where \( 	ext{DLI} = (	ext{PPFD} \cdot 	ext{Photoperiod} \cdot 3600) / 10^6 \). Calibrated with ADAU Ganja phytotron microgreen trials, yielding 148 mg/100g Vitamin C.
+            Where DLI = (PPFD &middot; Photoperiod &middot; 3600) / 10⁶. Calibrated with phytotron microgreen trials yielding 148 mg/100g Vitamin C.
           </p>
         </div>
 
@@ -1198,9 +1212,433 @@
             [ClO4⁻](t) = [ClO4⁻]₀ &middot; exp( -k_remediation &middot; t )
           </div>
           <p class="text-slate-400 text-[11px]">
-            ADAU Western Ganja Alfalfa (GA-04) achieves 62% perchlorate salt reduction in MGS-1 simulant within 30 growth sols, preparing regolith for long-term food cultivation.
+            Halotolerant Alfalfa (GA-04) achieves 62% perchlorate salt reduction in MGS-1 simulant within 30 growth sols.
           </p>
         </div>
+
+        <!-- Crew Body Vitamin Pool & Sols-to-Risk -->
+        <div class="glass-panel rounded-xl p-5 border border-slate-800 space-y-3 font-mono text-xs">
+          <h4 class="font-bold text-rose-400 uppercase text-sm">5. Crew Vitamin Pool &amp; Sols-to-Risk</h4>
+          <p class="text-slate-300">First-order physiological vitamin balance and analytic time-to-risk:</p>
+          <div class="p-3 bg-slate-900 rounded-lg text-rose-400 font-bold text-center">
+            P(t+1) = min(P_max, P_t(1-k) + a&middot;I_t) &bull; t* = ln((P_0-P_eq)/(P_thr-P_eq))/k
+          </div>
+          <p class="text-slate-400 text-[11px]">
+            Couples Arrhenius ration retention into astronaut body pools (Vitamin C, Thiamine B1, 25-OH-D) with personal baseline &plusmn;2&sigma; z-scores.
+          </p>
+        </div>
+
+        <!-- ECLSS Sabatier & Electrolytic OGS -->
+        <div class="glass-panel rounded-xl p-5 border border-slate-800 space-y-3 font-mono text-xs">
+          <h4 class="font-bold text-sky-400 uppercase text-sm">6. ECLSS Sabatier &amp; OGS Loop</h4>
+          <p class="text-slate-300">Electrolytic oxygen generation and catalytic Sabatier water recovery:</p>
+          <div class="p-3 bg-slate-900 rounded-lg text-sky-400 font-bold text-center">
+            CO₂ + 4H₂ &rarr; CH₄ + 2H₂O (&eta;_loop &ge; 96.8%)
+          </div>
+          <p class="text-slate-400 text-[11px]">
+            Stoichiometric OGS (1.126 kg H₂O/kg O₂) paired with Ni-catalyst Sabatier (0.818 kg H₂O/kg CO₂) and IoT regolith VWC% pulse irrigation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 8: CREW HEALTH & INSPIRATION4 ML ==================== -->
+    <section id="crewHealthView" class="tab-view hidden space-y-6">
+      <!-- Header Banner -->
+      <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-cyan-950/60 via-slate-900 to-orange-950/40 border border-cyan-500/30 p-6 shadow-xl">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div class="space-y-1.5">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-mono">
+              <i class="fa-solid fa-heart-pulse"></i>
+              <span>AI / ML Crew Physiology &amp; Anomaly Detection Engine (Yunis)</span>
+            </div>
+            <h2 class="text-xl sm:text-2xl font-bold font-mono text-white">CREW HEALTH MONITOR &amp; INSPIRATION4 BIOMARKERS</h2>
+            <p class="text-xs text-slate-300 font-mono max-w-3xl">
+              Arrhenius food vitamin degradation &rarr; astronaut body vitamin pool (Vitamin C, Thiamine B1, 25-OH-D) &rarr; personal baseline (&plusmn;2&sigma;) z-score &amp; IsolationForest anomaly detection &rarr; explainable early warning (50 Sols early) &rarr; corrective ration action.
+            </p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2 font-mono text-xs shrink-0">
+            <span class="px-2.5 py-1 rounded border border-amber-500/40 bg-amber-500/10 text-amber-300 font-bold uppercase text-[11px]">
+              <i class="fa-solid fa-flask mr-1"></i>Synthetic Crew + Real NASA OSDR i4
+            </span>
+            <span id="chCrewOverallStatus" class="px-3 py-1 rounded border border-red-500/40 bg-red-500/10 text-red-400 font-bold uppercase text-xs">ACT</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Astronaut Status Cards -->
+      <div id="chAstronautCards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+
+      <!-- Controls + Selected Astronaut Physiological Charts -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Left Scenario Controls -->
+        <div class="glass-panel rounded-xl p-5 border border-slate-800 space-y-4 font-mono text-xs">
+          <h3 class="font-bold text-white text-sm border-b border-slate-800 pb-3 uppercase flex items-center justify-between">
+            <span>Mission Timeline &amp; Scenario</span>
+            <span class="text-[10px] text-cyan-400">Causal Window</span>
+          </h3>
+
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-slate-300">Current Mission Sol:</span>
+              <span id="chSolLabel" class="text-orange-400 font-bold">SOL 200</span>
+            </div>
+            <input id="chSolSlider" type="range" min="0" max="449" value="200" class="w-full cursor-pointer" />
+            <div class="flex justify-between text-[10px] text-slate-500 mt-1">
+              <button class="ch-preset hover:text-orange-400 underline" data-sol="149">Sol 149 (Nominal)</button>
+              <button class="ch-preset hover:text-amber-400 underline" data-sol="165">Sol 165 (WATCH)</button>
+              <button class="ch-preset hover:text-red-400 underline" data-sol="192">Sol 192 (ACT)</button>
+              <button class="ch-preset hover:text-emerald-400 underline" data-sol="340">Sol 340 (Recovery)</button>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between border-t border-slate-800 pt-3">
+            <span class="text-slate-300 flex items-center space-x-2">
+              <i class="fa-solid fa-temperature-arrow-up text-orange-400"></i>
+              <span>Cooling Failure Event</span>
+            </span>
+            <button id="chFailureToggle" class="px-3 py-1 rounded border font-bold bg-orange-500/20 border-orange-500/50 text-orange-300">
+              ENABLED
+            </button>
+          </div>
+
+          <div id="chFailureControls" class="space-y-3">
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-slate-300">Failure Starts at Sol:</span>
+                <span id="chFailStartLabel" class="text-white font-bold">Sol 150</span>
+              </div>
+              <input id="chFailStartSlider" type="range" min="30" max="380" step="5" value="150" class="w-full cursor-pointer" />
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-slate-300">Failure Duration:</span>
+                <span id="chFailDurLabel" class="text-white font-bold">45 Sols</span>
+              </div>
+              <input id="chFailDurSlider" type="range" min="10" max="120" step="5" value="45" class="w-full cursor-pointer" />
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-slate-300">Storage Peak Temp:</span>
+                <span id="chFailTempLabel" class="text-white font-bold">29.5&deg;C</span>
+              </div>
+              <input id="chFailTempSlider" type="range" min="10" max="42" step="0.5" value="29.5" class="w-full cursor-pointer" />
+            </div>
+          </div>
+
+          <div class="p-3 rounded-lg bg-slate-900/90 border border-slate-800 space-y-1.5 text-[10px]">
+            <span class="text-orange-400 font-bold uppercase text-[11px] block">Causal Status Rules (Sol &ge; 28)</span>
+            <div class="flex space-x-2"><span class="w-16 font-bold text-red-400 shrink-0">ACT</span><span class="text-slate-400">Worst-nutrient Sols-to-risk &le; 45 Sols</span></div>
+            <div class="flex space-x-2"><span class="w-16 font-bold text-amber-400 shrink-0">WATCH</span><span class="text-slate-400">Sols-to-risk &le; 120 or any vital |z| &ge; 2.0</span></div>
+            <div class="flex space-x-2"><span class="w-16 font-bold text-emerald-400 shrink-0">NOMINAL</span><span class="text-slate-400">Within personal baseline (Sols 0&ndash;20)</span></div>
+            <div class="flex justify-between pt-2 border-t border-slate-800 text-slate-300 font-semibold">
+              <span id="chStorageStatus">Storage: 4.0&deg;C</span>
+              <span id="chGreenhouseStatus" class="text-emerald-400">Greenhouse: ONLINE</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Selected Astronaut Physiological Timeline -->
+        <div class="glass-panel rounded-xl p-5 border border-slate-800 lg:col-span-2 space-y-4">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-800 pb-3 gap-2 font-mono">
+            <div>
+              <h3 id="chSelectedTitle" class="font-bold text-white text-sm flex items-center space-x-2">
+                <i class="fa-solid fa-wave-square text-cyan-400"></i>
+                <span>MS-03 &mdash; PHYSIOLOGICAL TIMELINE &amp; FORECAST</span>
+              </h3>
+              <p id="chSelectedMeta" class="text-[10px] text-slate-400 mt-0.5">
+                First WATCH: Sol 165 &middot; First ACT: Sol 192 &middot; IsolationForest Anomaly Score: -0.18 &middot; 25(OH)D: 49.2 nmol/L
+              </p>
+            </div>
+            <span id="chSelectedPill" class="px-2.5 py-1 rounded border text-xs font-mono font-bold">ACT</span>
+          </div>
+
+          <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
+            <div id="chVitCChartBox"></div>
+            <div id="chVitB1ChartBox"></div>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-2 font-mono">
+            <div class="flex flex-wrap gap-1.5" id="chVitalButtons">
+              <button class="ch-vital-btn px-2.5 py-1 rounded text-[11px] bg-orange-500 text-white" data-vital="fatigue_score">Fatigue (/10)</button>
+              <button class="ch-vital-btn px-2.5 py-1 rounded text-[11px] bg-slate-900 border border-slate-800 text-slate-300" data-vital="hr_rest">Resting HR (bpm)</button>
+              <button class="ch-vital-btn px-2.5 py-1 rounded text-[11px] bg-slate-900 border border-slate-800 text-slate-300" data-vital="sleep_h">Sleep (h)</button>
+              <button class="ch-vital-btn px-2.5 py-1 rounded text-[11px] bg-slate-900 border border-slate-800 text-slate-300" data-vital="body_mass_kg">Body Mass (kg)</button>
+            </div>
+            <span class="text-[10px] text-emerald-400">Green Band = Personal Baseline Mean &plusmn; 2&sigma; (Sols 0&ndash;20)</span>
+          </div>
+          <div id="chVitalChartBox"></div>
+
+          <!-- Active Assessment -->
+          <div id="chCurrentAssessment"></div>
+        </div>
+      </div>
+
+      <!-- Explainable Early-Warning Alerts Log -->
+      <div class="glass-panel rounded-xl p-5 border border-slate-800 space-y-3">
+        <h3 class="font-mono font-bold text-white text-sm uppercase flex items-center space-x-2">
+          <i class="fa-solid fa-triangle-exclamation text-amber-400"></i>
+          <span id="chAlertsHeader">Explainable Early-Warning Alerts Raised Up to Sol 200</span>
+        </h3>
+        <div id="chAlertsGrid" class="grid grid-cols-1 lg:grid-cols-2 gap-3"></div>
+      </div>
+
+      <!-- Real NASA OSDR Inspiration4 (LSDS-7 CBC & LSDS-8 CMP) Blood Panel Spike -->
+      <div class="glass-panel rounded-xl p-5 border border-cyan-500/30 space-y-4">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-slate-800 pb-3 font-mono">
+          <div>
+            <span class="text-[10px] uppercase tracking-wider text-cyan-400 font-bold block">Real Spaceflight Clinical Validation Spike &bull; NASA OSDR OSD-569 (LSDS-7) &amp; OSD-575 (LSDS-8)</span>
+            <h3 class="text-sm sm:text-base font-bold text-white">Inspiration4 (i4) Astronaut Blood Panel Personal-Baseline Z-Score Analysis</h3>
+          </div>
+          <span class="text-[11px] px-2.5 py-1 rounded bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-mono">
+            Pre-Flight Baseline (L-92, L-44, L-3) vs Post-Flight (R+1, R+45, R+82, R+194)
+          </span>
+        </div>
+        <p class="text-xs text-slate-300 font-mono">
+          Applies the same personal-baseline z-score detector to real NASA Open Science Data Repository (OSDR) Complete Blood Count (CBC) and Comprehensive Metabolic Panel (CMP) measurements across astronauts C001&ndash;C004. Highlights subclinical post-landing shifts (|z| &gt; 2.0) even when values remain inside wide population reference ranges.
+        </p>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse font-mono text-xs">
+            <thead>
+              <tr class="border-b border-slate-800 text-slate-400 text-[10px] uppercase bg-slate-900/60">
+                <th class="p-2.5">Subject</th>
+                <th class="p-2.5">Panel &amp; Analyte</th>
+                <th class="p-2.5">Pre-Flight Baseline (L-92..L-3)</th>
+                <th class="p-2.5">R+1 Value</th>
+                <th class="p-2.5">Lab Ref Range</th>
+                <th class="p-2.5">Personal Z-Score</th>
+                <th class="p-2.5">Detection Verdict</th>
+              </tr>
+            </thead>
+            <tbody id="chI4TableBody" class="divide-y divide-slate-800/60"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 9: ECLSS & SMART REGOLITH HYDRO-MANAGEMENT ==================== -->
+    <section id="lifeSupportView" class="tab-view hidden space-y-6">
+      <!-- Header Banner -->
+      <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-purple-950/60 via-slate-900 to-emerald-950/50 border border-purple-500/30 p-6 shadow-xl">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div class="space-y-1.5">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-xs font-mono">
+              <i class="fa-solid fa-microchip"></i>
+              <span>Computer Engineering &amp; Closed-Loop ECLSS Simulation (Faruk Karimli)</span>
+            </div>
+            <h2 class="text-xl sm:text-2xl font-bold font-mono text-white">ECLSS &amp; SMART REGOLITH HYDRO-MANAGEMENT</h2>
+            <p class="text-xs text-slate-300 font-mono max-w-3xl">
+              Closed-loop Environmental Control and Life Support System (ECLSS) coupling Electrolytic OGS (2H₂O &rarr; 2H₂ + O₂), Sabatier catalytic water recovery (CO₂ + 4H₂ &rarr; CH₄ + 2H₂O), and IoT capacitive regolith soil moisture micro-irrigation controllers.
+            </p>
+          </div>
+          <div class="flex flex-wrap items-center gap-3 font-mono shrink-0">
+            <div class="px-3.5 py-2 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center space-x-2.5">
+              <span id="lsStatusDot" class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              <div>
+                <span class="text-[10px] text-slate-400 uppercase block">ECLSS State</span>
+                <span id="lsOverallState" class="text-xs font-bold text-white">OPTIMAL</span>
+              </div>
+            </div>
+            <div class="px-3.5 py-2 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center space-x-2.5">
+              <i class="fa-solid fa-droplet text-cyan-400"></i>
+              <div>
+                <span class="text-[10px] text-slate-400 uppercase block">Water Loop Closure</span>
+                <span id="lsWaterClosureLabel" class="text-xs font-bold text-cyan-300">96.8%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Contingency Stress Controls -->
+      <div class="glass-panel rounded-xl p-5 border border-slate-800 space-y-4 font-mono text-xs">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-800">
+          <span class="font-bold text-white text-sm uppercase flex items-center space-x-2">
+            <i class="fa-solid fa-sliders text-orange-400"></i>
+            <span>Contingency &amp; Life-Support Stress Controls</span>
+          </span>
+          <span class="text-[11px] text-emerald-400">NASA-STD-3001 Stoichiometric Balance Active</span>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+            <div class="flex justify-between mb-1.5">
+              <span class="text-slate-400">Telemetry Sol</span>
+              <span id="lsSolVal" class="text-orange-400 font-bold">Sol 450</span>
+            </div>
+            <input id="lsSolSlider" type="range" min="1" max="450" value="450" class="w-full cursor-pointer" />
+          </div>
+          <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+            <div class="flex justify-between mb-1.5">
+              <span class="text-slate-400">Crew Size</span>
+              <span id="lsCrewVal" class="text-cyan-400 font-bold">4 Astronauts</span>
+            </div>
+            <input id="lsCrewSlider" type="range" min="2" max="8" value="4" class="w-full cursor-pointer" />
+          </div>
+          <button id="lsDustToggle" class="p-3 rounded-lg border text-left transition bg-slate-900/80 border-slate-800 text-slate-300">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] uppercase font-bold tracking-wider">Global Dust Storm</span>
+              <span id="lsDustBadge" class="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400">INACTIVE</span>
+            </div>
+            <p class="text-[10px] text-slate-400">Solar irradiance -72% (Sol 180&ndash;240)</p>
+          </button>
+          <button id="lsLeakToggle" class="p-3 rounded-lg border text-left transition bg-slate-900/80 border-slate-800 text-slate-300">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] uppercase font-bold tracking-wider">Cabin Micro-Leak</span>
+              <span id="lsLeakBadge" class="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400">NOMINAL</span>
+            </div>
+            <p class="text-[10px] text-slate-400">Seal leak (-1.45 kg O₂/Sol)</p>
+          </button>
+          <button id="lsLoopToggle" class="p-3 rounded-lg border text-left transition bg-emerald-500/15 border-emerald-500/50 text-emerald-300">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] uppercase font-bold tracking-wider">Closed-Loop ECLSS</span>
+              <span id="lsLoopBadge" class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">ENABLED</span>
+            </div>
+            <p class="text-[10px] text-slate-300">Sabatier + WRS (96.8%) + OGS</p>
+          </button>
+        </div>
+      </div>
+
+      <!-- 4 Core ECLSS Telemetry Cards -->
+      <div id="lsKpiGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+
+      <!-- Smart Regolith IoT Capacitive Soil Moisture Sensor Array -->
+      <div class="glass-panel rounded-xl p-5 border border-slate-800 space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3 font-mono">
+          <div>
+            <h3 class="text-sm font-bold text-white uppercase flex items-center space-x-2">
+              <i class="fa-solid fa-layer-group text-emerald-400"></i>
+              <span>Smart Regolith &amp; Soil Moisture Sensor Platform (4-Zone IoT Array)</span>
+            </h3>
+            <p class="text-[11px] text-slate-400 mt-0.5">
+              Capacitive VWC% probes with automated microcontroller pulse irrigation valves (Auto-OPEN &le; 38% VWC, Auto-CUTOFF &ge; 50% VWC)
+            </p>
+          </div>
+          <span class="text-xs font-mono px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
+            MGS-1 Regolith Simulant Active
+          </span>
+        </div>
+        <div id="lsSensorsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 font-mono"></div>
+      </div>
+
+      <!-- 450-Sol ECLSS Consumable Trajectory SVG Chart -->
+      <div class="glass-panel rounded-xl p-5 border border-slate-800 space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3 font-mono">
+          <div>
+            <h3 class="text-sm font-bold text-white uppercase">450-Sol Consumable Reserves &amp; Grid Trajectory</h3>
+            <p class="text-[11px] text-slate-400">Coupled O₂ Reserve (kg), Potable H₂O Reserve (L), and Habitat Battery SOC (%)</p>
+          </div>
+          <div id="lsVerdictBadge" class="px-3 py-1 rounded border text-xs font-mono font-bold bg-emerald-500/10 border-emerald-500/40 text-emerald-300">
+            VERDICT: NOMINAL_SURVIVED
+          </div>
+        </div>
+        <div id="lsTrajectoryChartBox"></div>
+        <div id="lsAlertsBox" class="grid grid-cols-1 md:grid-cols-2 gap-2 font-mono text-xs"></div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 10: NASA DATA, JUDGING Q&A & AI DISCLOSURE ==================== -->
+    <section id="judgingView" class="tab-view hidden space-y-6">
+      <!-- Banner -->
+      <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-amber-950/50 via-slate-900 to-cyan-950/50 border border-amber-500/30 p-6 shadow-xl font-mono">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div class="space-y-1.5">
+            <span class="px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-bold inline-block">
+              OFFICIAL EVALUATION BRIEF &bull; 100-POINT RUBRIC &amp; 3 MANDATORY QUESTIONS
+            </span>
+            <h2 class="text-xl sm:text-2xl font-bold text-white">NASA DATA PROVENANCE, HACKATHON AUDIT &amp; LIMITATIONS</h2>
+            <p class="text-xs text-slate-300 max-w-3xl">
+              Direct verification for judges: (01) What we built during the hackathon vs pre-existing assets, (02) Official NASA datasets &amp; empirical ground-truth, (03) Current scientific limitations &amp; next steps, and AI/Branding compliance.
+            </p>
+          </div>
+          <a href="slides.html" class="px-4 py-2.5 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-bold text-xs flex items-center space-x-2 shrink-0 shadow-lg shadow-orange-500/20">
+            <i class="fa-solid fa-tv"></i>
+            <span>Open 7-Slide Pitch Deck</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 3 Mandatory Judge Questions (01, 02, 03) -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 font-mono text-xs">
+        <!-- Question 01 -->
+        <div class="glass-panel rounded-xl p-5 border border-orange-500/40 space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+            <span class="text-orange-400 font-bold text-sm uppercase">01 &bull; Built During Hackathon</span>
+            <span class="px-2 py-0.5 rounded bg-orange-500/15 text-orange-300 text-[10px]">Rule #4 Compliant</span>
+          </div>
+          <p class="text-slate-300 text-[11px] leading-relaxed">
+            <strong>100% Built During the 14&ndash;15 Nov Hackathon by Team NurtureAISpace:</strong>
+          </p>
+          <ul class="space-y-1.5 text-slate-300 text-[11px] list-disc pl-4">
+            <li><strong>Suleyman Hajizadeh:</strong> First-principles Arrhenius kinetic engine (<code>R&sup2; = 0.999</code>), Drop-Dead Sol calculator, and SciPy HiGHS linear programming diet optimizer.</li>
+            <li><strong>Banu Gurbanizada:</strong> Responsive 2-tier aerospace mission control UI, interactive SVG chart renderer, and 7-slide presentation deck.</li>
+            <li><strong>Yunis:</strong> 1st-order body vitamin pool model (Vit C, B1, 25-OH-D), personal-baseline (&plusmn;2&sigma;) + IsolationForest anomaly detector, and real NASA Inspiration4 blood panel z-score pipeline.</li>
+            <li><strong>Faruk Karimli:</strong> Closed-loop ECLSS (OGS electrolysis + Sabatier 96.8% water loop) and 4-zone IoT capacitive regolith soil moisture valve controller.</li>
+          </ul>
+          <div class="p-2.5 rounded bg-slate-950 border border-slate-800 text-[10px] text-slate-400">
+            <strong class="text-amber-300">Disclosed Pre-Hackathon Material (Rule #4):</strong> Public NASA OSDR CSV files (<code>OSD-569/575</code>), NASA-STD-3001 constants, and prior theoretical notes on soil moisture capacitance probes (all simulation &amp; UI code written fresh during the hackathon).
+          </div>
+        </div>
+
+        <!-- Question 02 -->
+        <div class="glass-panel rounded-xl p-5 border border-cyan-500/40 space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+            <span class="text-cyan-400 font-bold text-sm uppercase">02 &bull; Official NASA Data Used</span>
+            <span class="px-2 py-0.5 rounded bg-cyan-500/15 text-cyan-300 text-[10px]">4 NASA Sources</span>
+          </div>
+          <ul class="space-y-2.5 text-slate-300 text-[11px]">
+            <li class="p-2 rounded bg-slate-950 border border-slate-800">
+              <strong class="text-cyan-300 block">1. NASA OSDR OSD-569 (LSDS-7 CBC) &amp; OSD-575 (LSDS-8 CMP)</strong>
+              Real Inspiration4 astronaut blood panels (1,086 rows in <code>backend/data/real/i4/</code>) across C001&ndash;C004 (<code>L-92, L-44, L-3</code> vs <code>R+1..R+194</code>).
+            </li>
+            <li class="p-2 rounded bg-slate-950 border border-slate-800">
+              <strong class="text-orange-300 block">2. NASA JSC Space Food Lab (NASA/TM-2011-216157)</strong>
+              Empirical multi-year vitamin degradation rates in spaceflight rations (Cooper et al. &amp; Perchonok et al.), calibrating Arrhenius <code>E_a</code> and <code>A</code>.
+            </li>
+            <li class="p-2 rounded bg-slate-950 border border-slate-800">
+              <strong class="text-emerald-300 block">3. NASA-STD-3001 (Vol. 2, Rev D) &amp; ISS 25(OH)D Studies</strong>
+              Official daily macro/micronutrient requirements and ISS serum Vitamin D decline rates (Smith et al., 2012).
+            </li>
+            <li class="p-2 rounded bg-slate-950 border border-slate-800">
+              <strong class="text-purple-300 block">4. NASA Life Support BVAD (NASA/TP-2015-218570)</strong>
+              Crew metabolic stoichiometry (<code>0.84 kg O₂/Sol</code>, <code>1.00 kg CO₂/Sol</code>, <code>15.3 L H₂O/Sol</code>) for Sabatier/OGS modeling.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Question 03 -->
+        <div class="glass-panel rounded-xl p-5 border border-emerald-500/40 space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+            <span class="text-emerald-400 font-bold text-sm uppercase">03 &bull; Limitations &amp; Next Steps</span>
+            <span class="px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300 text-[10px]">Honest Audit</span>
+          </div>
+          <div class="space-y-2 text-[11px] text-slate-300">
+            <strong class="text-amber-300 block uppercase text-[10px]">What Doesn't Work Yet (Limitations):</strong>
+            <ul class="list-disc pl-4 space-y-1">
+              <li><strong>Synthetic 450-Sol Vitals:</strong> Since no human has flown a 450-Sol Mars mission, the 450-Sol crew trajectories are synthetic, whereas our real NASA Inspiration4 blood validation has a small pre-flight baseline (<code>n = 3</code>).</li>
+              <li><strong>1-Compartment Kinetics:</strong> Water-soluble vitamins are modeled with single-compartment 1st-order turnover without Galactic Cosmic Ray (GCR) gut malabsorption.</li>
+              <li><strong>Simulated IoT Valves:</strong> Regolith VWC% probes are software-emulated rather than wired to physical hardware probes.</li>
+            </ul>
+            <strong class="text-emerald-300 block uppercase text-[10px] pt-2">If We Had More Time (Roadmap):</strong>
+            <ul class="list-disc pl-4 space-y-1">
+              <li><strong>Hardware-in-the-Loop at ADAU Phytotron:</strong> Wire physical ESP32/STM32 capacitive moisture &amp; EC sensors in MGS-1 simulant trays growing GHM-01 microgreens.</li>
+              <li><strong>Radiation + Thermal Kinetics:</strong> Couple GCR ionizing dose into Arrhenius decay <code>k(T, D_rad)</code>.</li>
+              <li><strong>Live Wearable Stream:</strong> Connect real-time smartwatch HRV &amp; sleep telemetry into the anomaly engine.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Use of AI & Branding Compliance Box -->
+      <div class="glass-panel rounded-xl p-5 border border-slate-800 font-mono text-xs space-y-2">
+        <div class="flex items-center justify-between">
+          <span class="font-bold text-white uppercase"><i class="fa-solid fa-shield-halved text-cyan-400 mr-1.5"></i>Use of AI &amp; NASA Branding Compliance Statement</span>
+          <span class="text-[10px] text-emerald-400 font-bold">SPACEAPPSCHALLENGE.ORG COMPLIANT</span>
+        </div>
+        <p class="text-slate-300 text-[11px] leading-relaxed">
+          <strong>Machine Learning in Application:</strong> Causal personal-baseline z-score detectors and per-astronaut <code>IsolationForest</code> models (Scikit-learn) trained exclusively on Sols 0&ndash;20.<br/>
+          <strong>Generative AI Usage:</strong> LLM coding assistants (Claude / Gemini) were used during the hackathon for code structuring, documentation formatting, and test-case generation; all equations, stoichiometry, and datasets were manually verified against NASA publications.<br/>
+          <strong>Logo &amp; Media Policy:</strong> Official NASA logos/insignia are strictly <strong>NOT used</strong> anywhere in NurtureAISpace branding.
+        </p>
       </div>
     </section>
 
@@ -1271,7 +1709,7 @@
           </div>
           <div class="p-3 rounded-lg bg-slate-900/60 border border-slate-800/80 flex flex-col justify-between space-y-2 hover:border-purple-500/40 transition">
             <div class="flex flex-col space-y-1">
-              <span class="text-white font-bold">Faruk</span>
+              <span class="text-white font-bold">Faruk Karimli</span>
               <span class="text-purple-400 font-mono text-[10px] uppercase font-semibold">Computer Engineering &amp; Simulation</span>
               <span class="text-slate-400 text-[10px]">Habitat Life Support Simulation, Sol-by-Sol Stress Testing</span>
             </div>
