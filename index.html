@@ -72,6 +72,10 @@
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             <span>NASA STD-3001 OK</span>
           </div>
+          <a href="slides.html" class="px-2.5 py-1 rounded bg-orange-500/15 hover:bg-orange-500/25 text-orange-300 hover:text-white transition text-xs font-mono flex items-center space-x-1.5 border border-orange-500/40" title="Official 7-Slide Presentation Deck">
+            <i class="fa-solid fa-tv text-xs"></i>
+            <span class="hidden sm:inline">7-Slide Deck</span>
+          </a>
           <a href="https://github.com/NurtureAISpace/mars-food-intelligence" target="_blank" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition text-xs font-mono flex items-center space-x-1.5 border border-slate-700/60" title="Private Core Repository">
             <i class="fa-brands fa-github text-sm"></i>
             <span class="hidden sm:inline">Core Repo</span>
@@ -119,6 +123,10 @@
           <button class="nav-tab flex items-center space-x-1.5 px-3 py-1.5 rounded-md font-medium transition text-slate-300 hover:bg-slate-800 hover:text-white" data-target="architectureView">
             <i class="fa-solid fa-atom"></i>
             <span>Architecture &amp; Math</span>
+          </button>
+          <button class="nav-tab flex items-center space-x-1.5 px-3 py-1.5 rounded-md font-medium transition text-amber-400 hover:bg-slate-800 hover:text-amber-300" data-target="judgingView">
+            <i class="fa-solid fa-award"></i>
+            <span>NASA Data &amp; Q&amp;A</span>
           </button>
         </nav>
       </div>
@@ -1300,6 +1308,112 @@
         </div>
         <div id="lsTrajectoryChartBox"></div>
         <div id="lsAlertsBox" class="grid grid-cols-1 md:grid-cols-2 gap-2 font-mono text-xs"></div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 10: NASA DATA, JUDGING Q&A & AI DISCLOSURE ==================== -->
+    <section id="judgingView" class="tab-view hidden space-y-6">
+      <!-- Banner -->
+      <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-amber-950/50 via-slate-900 to-cyan-950/50 border border-amber-500/30 p-6 shadow-xl font-mono">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div class="space-y-1.5">
+            <span class="px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-bold inline-block">
+              OFFICIAL EVALUATION BRIEF &bull; 100-POINT RUBRIC &amp; 3 MANDATORY QUESTIONS
+            </span>
+            <h2 class="text-xl sm:text-2xl font-bold text-white">NASA DATA PROVENANCE, HACKATHON AUDIT &amp; LIMITATIONS</h2>
+            <p class="text-xs text-slate-300 max-w-3xl">
+              Direct verification for judges: (01) What we built during the hackathon vs pre-existing assets, (02) Official NASA datasets &amp; empirical ground-truth, (03) Current scientific limitations &amp; next steps, and AI/Branding compliance.
+            </p>
+          </div>
+          <a href="slides.html" class="px-4 py-2.5 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-bold text-xs flex items-center space-x-2 shrink-0 shadow-lg shadow-orange-500/20">
+            <i class="fa-solid fa-tv"></i>
+            <span>Open 7-Slide Pitch Deck</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 3 Mandatory Judge Questions (01, 02, 03) -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 font-mono text-xs">
+        <!-- Question 01 -->
+        <div class="glass-panel rounded-xl p-5 border border-orange-500/40 space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+            <span class="text-orange-400 font-bold text-sm uppercase">01 &bull; Built During Hackathon</span>
+            <span class="px-2 py-0.5 rounded bg-orange-500/15 text-orange-300 text-[10px]">Rule #4 Compliant</span>
+          </div>
+          <p class="text-slate-300 text-[11px] leading-relaxed">
+            <strong>100% Built During the 14&ndash;15 Nov Hackathon by Team NurtureAISpace:</strong>
+          </p>
+          <ul class="space-y-1.5 text-slate-300 text-[11px] list-disc pl-4">
+            <li><strong>Suleyman Hajizadeh:</strong> First-principles Arrhenius kinetic engine (<code>R&sup2; = 0.999</code>), Drop-Dead Sol calculator, and SciPy HiGHS linear programming diet optimizer.</li>
+            <li><strong>Banu Gurbanizada:</strong> Responsive 2-tier aerospace mission control UI, interactive SVG chart renderer, and 7-slide presentation deck.</li>
+            <li><strong>Yunis:</strong> 1st-order body vitamin pool model (Vit C, B1, 25-OH-D), personal-baseline (&plusmn;2&sigma;) + IsolationForest anomaly detector, and real NASA Inspiration4 blood panel z-score pipeline.</li>
+            <li><strong>Faruk:</strong> Closed-loop ECLSS (OGS electrolysis + Sabatier 96.8% water loop) and 4-zone IoT capacitive regolith soil moisture valve controller.</li>
+          </ul>
+          <div class="p-2.5 rounded bg-slate-950 border border-slate-800 text-[10px] text-slate-400">
+            <strong class="text-amber-300">Disclosed Pre-Hackathon Material (Rule #4):</strong> Public NASA OSDR CSV files (<code>OSD-569/575</code>), NASA-STD-3001 constants, and prior theoretical notes on soil moisture capacitance probes (all simulation &amp; UI code written fresh during the hackathon).
+          </div>
+        </div>
+
+        <!-- Question 02 -->
+        <div class="glass-panel rounded-xl p-5 border border-cyan-500/40 space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+            <span class="text-cyan-400 font-bold text-sm uppercase">02 &bull; Official NASA Data Used</span>
+            <span class="px-2 py-0.5 rounded bg-cyan-500/15 text-cyan-300 text-[10px]">4 NASA Sources</span>
+          </div>
+          <ul class="space-y-2.5 text-slate-300 text-[11px]">
+            <li class="p-2 rounded bg-slate-950 border border-slate-800">
+              <strong class="text-cyan-300 block">1. NASA OSDR OSD-569 (LSDS-7 CBC) &amp; OSD-575 (LSDS-8 CMP)</strong>
+              Real Inspiration4 astronaut blood panels (1,086 rows in <code>backend/data/real/i4/</code>) across C001&ndash;C004 (<code>L-92, L-44, L-3</code> vs <code>R+1..R+194</code>).
+            </li>
+            <li class="p-2 rounded bg-slate-950 border border-slate-800">
+              <strong class="text-orange-300 block">2. NASA JSC Space Food Lab (NASA/TM-2011-216157)</strong>
+              Empirical multi-year vitamin degradation rates in spaceflight rations (Cooper et al. &amp; Perchonok et al.), calibrating Arrhenius <code>E_a</code> and <code>A</code>.
+            </li>
+            <li class="p-2 rounded bg-slate-950 border border-slate-800">
+              <strong class="text-emerald-300 block">3. NASA-STD-3001 (Vol. 2, Rev D) &amp; ISS 25(OH)D Studies</strong>
+              Official daily macro/micronutrient requirements and ISS serum Vitamin D decline rates (Smith et al., 2012).
+            </li>
+            <li class="p-2 rounded bg-slate-950 border border-slate-800">
+              <strong class="text-purple-300 block">4. NASA Life Support BVAD (NASA/TP-2015-218570)</strong>
+              Crew metabolic stoichiometry (<code>0.84 kg O₂/Sol</code>, <code>1.00 kg CO₂/Sol</code>, <code>15.3 L H₂O/Sol</code>) for Sabatier/OGS modeling.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Question 03 -->
+        <div class="glass-panel rounded-xl p-5 border border-emerald-500/40 space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+            <span class="text-emerald-400 font-bold text-sm uppercase">03 &bull; Limitations &amp; Next Steps</span>
+            <span class="px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300 text-[10px]">Honest Audit</span>
+          </div>
+          <div class="space-y-2 text-[11px] text-slate-300">
+            <strong class="text-amber-300 block uppercase text-[10px]">What Doesn't Work Yet (Limitations):</strong>
+            <ul class="list-disc pl-4 space-y-1">
+              <li><strong>Synthetic 450-Sol Vitals:</strong> Since no human has flown a 450-Sol Mars mission, the 450-Sol crew trajectories are synthetic, whereas our real NASA Inspiration4 blood validation has a small pre-flight baseline (<code>n = 3</code>).</li>
+              <li><strong>1-Compartment Kinetics:</strong> Water-soluble vitamins are modeled with single-compartment 1st-order turnover without Galactic Cosmic Ray (GCR) gut malabsorption.</li>
+              <li><strong>Simulated IoT Valves:</strong> Regolith VWC% probes are software-emulated rather than wired to physical hardware probes.</li>
+            </ul>
+            <strong class="text-emerald-300 block uppercase text-[10px] pt-2">If We Had More Time (Roadmap):</strong>
+            <ul class="list-disc pl-4 space-y-1">
+              <li><strong>Hardware-in-the-Loop at ADAU Phytotron:</strong> Wire physical ESP32/STM32 capacitive moisture &amp; EC sensors in MGS-1 simulant trays growing GHM-01 microgreens.</li>
+              <li><strong>Radiation + Thermal Kinetics:</strong> Couple GCR ionizing dose into Arrhenius decay <code>k(T, D_rad)</code>.</li>
+              <li><strong>Live Wearable Stream:</strong> Connect real-time smartwatch HRV &amp; sleep telemetry into the anomaly engine.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Use of AI & Branding Compliance Box -->
+      <div class="glass-panel rounded-xl p-5 border border-slate-800 font-mono text-xs space-y-2">
+        <div class="flex items-center justify-between">
+          <span class="font-bold text-white uppercase"><i class="fa-solid fa-shield-halved text-cyan-400 mr-1.5"></i>Use of AI &amp; NASA Branding Compliance Statement</span>
+          <span class="text-[10px] text-emerald-400 font-bold">SPACEAPPSCHALLENGE.ORG COMPLIANT</span>
+        </div>
+        <p class="text-slate-300 text-[11px] leading-relaxed">
+          <strong>Machine Learning in Application:</strong> Causal personal-baseline z-score detectors and per-astronaut <code>IsolationForest</code> models (Scikit-learn) trained exclusively on Sols 0&ndash;20.<br/>
+          <strong>Generative AI Usage:</strong> LLM coding assistants (Claude / Gemini) were used during the hackathon for code structuring, documentation formatting, and test-case generation; all equations, stoichiometry, and datasets were manually verified against NASA publications.<br/>
+          <strong>Logo &amp; Media Policy:</strong> Official NASA logos/insignia are strictly <strong>NOT used</strong> anywhere in NurtureAISpace branding.
+        </p>
       </div>
     </section>
 
